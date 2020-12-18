@@ -3,7 +3,7 @@ import { useStyles } from "./style";
 
 export const ButtonText = ({ children }) => {
   const classes = useStyles();
-  return <p className={classes.buttonText}>{children}</p>;
+  return <p className={classes.button}>{children}</p>;
 };
 
 export default ButtonText;
