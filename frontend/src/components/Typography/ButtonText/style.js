@@ -7,6 +7,7 @@ export const useStyles = createUseStyles({
     fontFamily: "Roboto, sans-serif",
     fontSize: "0.875em",
     fontWeight: "bold",
+    textTransform: "uppercase",
     letterSpacing: "0.0109375em",
     lineHeight: "135%",
   },
