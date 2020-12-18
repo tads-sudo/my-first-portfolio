@@ -8,18 +8,19 @@ export const useStyles = createUseStyles({
     lineHeight: "110%",
     fontFamily: "Montserrat, sans-serif",
     fontWeight: "bold",
-    letterSpacing: "0%",
+    letterSpacing: "0em",
   },
   [`@media (min-width: ${SCREEN_TABLET.MIN}px)`]: {
     heading: {
       fontSize: "2.875em",
-      letterSpacing: "2%",
+      letterSpacing: "0.0575em",
       lineHeight: "120%",
     },
   },
   [`@media (min-width: ${SCREEN_DESKTOP.MIN}px)`]: {
     heading: {
       fontSize: "3.8125em",
+      letterSpacing: "0em",
       lineHeight: "120%",
     },
   },
