@@ -2,26 +2,25 @@ import { createUseStyles } from "react-jss";
 import { SNOW_DRIFT, SCREEN_TABLET, SCREEN_DESKTOP } from "../../../theme";
 
 export const useStyles = createUseStyles({
-  heading: {
+  navItem: {
     color: SNOW_DRIFT,
+    fontFamily: "Roboto, sans-serif",
     fontSize: "2.0625em",
-    lineHeight: "110%",
-    fontFamily: "Montserrat, sans-serif",
     fontWeight: "bold",
-    letterSpacing: "0em",
+    letterSpacing: "0.061875rem",
+    lineHeight: "120%",
   },
   [`@media (min-width: ${SCREEN_TABLET.MIN}px)`]: {
-    heading: {
+    navItem: {
       fontSize: "2.875em",
-      letterSpacing: "0.0575em",
-      lineHeight: "120%",
+      letterSpacing: "0.0575rem",
     },
   },
   [`@media (min-width: ${SCREEN_DESKTOP.MIN}px)`]: {
-    heading: {
-      fontSize: "3.8125em",
-      letterSpacing: "0em",
-      lineHeight: "120%",
+    navItem: {
+      fontSize: "1em",
+      letterSpacing: "0.005em",
+      lineHeight: "140%",
     },
   },
 });
