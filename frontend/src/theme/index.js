@@ -1,6 +1,6 @@
+// COLORS
 export const WHITE = "#ffffff";
 export const BLACK = "#000000";
-// COLORS
 export const SNOW_DRIFT = "#f9faf7";
 export const BURNING_ORANGE = "#ff7129";
 export const SUNSET_ORANGE = "#ff473a";
@@ -8,16 +8,62 @@ export const TUATARA = "#2f2f2b";
 export const BANDICOOT = "#828276";
 export const CONIFER = "#71ea41";
 export const TURQUISE_BLUE = "#4bedea";
+export const CHICAGO = "#5B5B53";
+
 export const color = {
   PRIMARY: BURNING_ORANGE,
   SECONDARY: TUATARA,
   TERTIARY: SNOW_DRIFT,
+  DISABLED: CHICAGO,
   SUBTLE: BANDICOOT,
   SUCCESS: CONIFER,
   ERROR: SUNSET_ORANGE,
   LINKS: TURQUISE_BLUE,
   BLACK: BLACK,
   WHITE: WHITE,
+};
+
+// BUTTON
+export const button_sizes = {
+  SM: {
+    padding: "8px 24px",
+  },
+  MD: {
+    padding: "10px 30px",
+  },
+  LG: {
+    padding: "12px 36px",
+  },
+  XL: {
+    padding: "18px 54px",
+  },
+};
+
+export const button_spacing = {
+  4: "4px",
+  8: "8px",
+};
+
+export const button_borders = {
+  0: "0",
+  8: "8px",
+  16: "16px",
+  32: "32px",
+};
+
+export const button_types = {
+  FILL: {
+    border: "none",
+  },
+  OUTLINE: {
+    backgroundColor: "transparent",
+    borderWidth: "1px",
+    borderStyle: "solid",
+  },
+  GHOST: {
+    backgroundColor: "transparent",
+    border: "none",
+  },
 };
 
 //SCREEN SIZES
