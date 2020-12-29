@@ -6,5 +6,4 @@ export * from "./Text";
 export * from "./SmallText";
 export * from "./ButtonText";
 export * from "./PlaceholderText";
-export * from "./NavItemText";
 export * from "./ColoredText";
