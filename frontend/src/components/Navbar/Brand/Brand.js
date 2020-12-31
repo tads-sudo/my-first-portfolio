@@ -6,7 +6,7 @@ export const Brand = () => {
   const classes = useStyles();
 
   return (
-    <NavLink to="/">
+    <NavLink to="/about">
       <svg
         className={classes.svg}
         viewBox="0 0 86 60"
