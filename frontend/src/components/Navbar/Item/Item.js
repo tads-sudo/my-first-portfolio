@@ -10,18 +10,19 @@ export const Item = () => {
     <>
       {routes.map((route, index) => {
         return (
-          <NavLink
-            key={`nav-link-${index}`}
-            to={route.routePath}
-            className={classes.navLink}
-            activeClassName={classes.activeNavLinks}
-            // activeStyle={{
-            //   fontWeight: "bold",
-            //   color: "red",
-            // }}
-          >
-            {route.routeName}
-          </NavLink>
+          <li key={`nav-link-${index}`}>
+            <NavLink
+              to={route.routePath}
+              className={classes.navLink}
+              activeClassName={classes.activeNavLinks}
+              // activeStyle={{
+              //   fontWeight: "bold",
+              //   color: "red",
+              // }}
+            >
+              {route.routeName}
+            </NavLink>
+          </li>
         );
       })}
     </>
