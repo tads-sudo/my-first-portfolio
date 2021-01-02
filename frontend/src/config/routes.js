@@ -5,7 +5,7 @@ export const routes = [
     routePath: "/about",
   },
   {
-    routeName: "Skills & Experiece",
+    routeName: "Skills & Experience",
     routePath: "/skills-&-experience",
   },
   {
