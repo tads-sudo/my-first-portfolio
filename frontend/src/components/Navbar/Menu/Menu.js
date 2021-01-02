@@ -1,11 +1,12 @@
 import React from "react";
 import { useStyles } from "./style";
 
-export const Menu = () => {
+export const Menu = ({ onClick }) => {
   const classes = useStyles();
   return (
     <svg
-      className={classes.menu}
+      onClick={onClick}
+      className={classes.menuIcon}
       viewBox="0 0 68 60"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
