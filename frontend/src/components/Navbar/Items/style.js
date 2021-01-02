@@ -9,6 +9,8 @@ export const useStyles = createUseStyles({
     items: {
       display: "flex",
       alignItems: "center",
+      listStyle: "none",
+      textAlign: "center",
     },
   },
 });

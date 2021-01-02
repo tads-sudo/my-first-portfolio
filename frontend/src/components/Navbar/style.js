@@ -7,13 +7,14 @@ export const useStyles = createUseStyles({
     height: "60px",
     flexDirection: "row",
     justifyContent: "space-between",
-    alignItems: "center",
     padding: "10px 16px",
     background: color.SECONDARY,
+    position: "sticky",
     zIndex: "10",
   },
   [`@media (min-width: ${SCREEN_TABLET.MIN}px)`]: {
     nav: {
+      //   transition: "0.8s all ease",
       padding: "10px 24px",
     },
   },

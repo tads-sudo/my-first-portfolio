@@ -4,7 +4,7 @@ import { useStyles } from "./style";
 export const Items = ({ children }) => {
   const classes = useStyles();
 
-  return <div className={classes.items}>{children}</div>;
+  return <ul className={classes.items}>{children}</ul>;
 };
 
 export default Items;
