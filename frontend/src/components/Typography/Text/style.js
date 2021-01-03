@@ -9,5 +9,6 @@ export const useStyles = createUseStyles({
     fontWeight: props.bold ? "bold" : "400",
     letterSpacing: "0.005em",
     lineHeight: "140%",
+    margin: "0",
   }),
 });
