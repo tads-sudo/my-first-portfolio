@@ -5,3 +5,4 @@ export * from "./LinkText";
 export * from "./Navbar";
 export * from "./Topbar";
 export * from "./Card";
+export * from "./Form";
