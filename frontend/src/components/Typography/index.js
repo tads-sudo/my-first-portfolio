@@ -5,5 +5,4 @@ export * from "./Subtitle";
 export * from "./Text";
 export * from "./SmallText";
 export * from "./ButtonText";
-export * from "./PlaceholderText";
 export * from "./ColoredText";
