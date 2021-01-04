@@ -1,4 +1,5 @@
 import { createUseStyles } from "react-jss";
+import Color from "color";
 import { color } from "../../../theme";
 
 export const useStyles = createUseStyles({
@@ -16,6 +17,13 @@ export const useStyles = createUseStyles({
     letterSpacing: "0.005em",
     lineHeight: "140%",
     color: color.TERTIARY,
+    transition: "all 0.2s ease-in-out",
+    "&:hover": {
+      background: Color("rgba(255, 255, 255, 0.05)")
+        .mix(Color(color.SECONDARY), 0.25)
+        .hex(),
+      transition: "all 0.2s ease-in-out",
+    },
     "&:focus": {
       outline: "none",
       boxShadow: `0 0 0 1px ${color.PRIMARY}`,
