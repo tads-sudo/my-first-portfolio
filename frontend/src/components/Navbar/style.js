@@ -9,12 +9,12 @@ export const useStyles = createUseStyles({
     justifyContent: "space-between",
     padding: "10px 16px",
     background: color.SECONDARY,
+    top: "0",
     position: "sticky",
     zIndex: "10",
   },
   [`@media (min-width: ${SCREEN_TABLET.MIN}px)`]: {
     nav: {
-      //   transition: "0.8s all ease",
       padding: "10px 24px",
     },
   },
