@@ -9,6 +9,7 @@ import {
   Button,
   Text,
   ColoredText,
+  ButtonText,
 } from "../../../../components";
 
 export const ContactForm = () => {
@@ -32,10 +33,10 @@ export const ContactForm = () => {
         <FormInputLabel>About your project</FormInputLabel>
         <FormTextArea placeholder="Message" />
       </FormGroup>
-      <Button size="SM" corner="8">
-        <Text>
+      <Button size="LG" corner="8">
+        <ButtonText>
           <ColoredText color="BLACK">SUBMIT YOUR MESSAGE</ColoredText>
-        </Text>
+        </ButtonText>
       </Button>
     </Form>
   );
