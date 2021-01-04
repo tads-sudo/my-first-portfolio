@@ -16,6 +16,7 @@ export const useStyles = createUseStyles({
     display: "flex",
     flexDirection: "row",
     alignItems: "center",
+    transition: "all 0.3s ease-in-out",
     ...button_types[props.typeProps],
     "&:hover": {
       backgroundColor: Color(color[props.colorProps])
@@ -24,6 +25,7 @@ export const useStyles = createUseStyles({
       borderColor: Color(color[props.colorProps])
         .mix(Color(color.SECONDARY), 0.2)
         .hex(),
+      transition: "all 0.3s ease-in-out",
       ...button_types[props.typeProps],
     },
     // "&:focus": {
