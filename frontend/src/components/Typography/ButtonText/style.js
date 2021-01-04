@@ -10,6 +10,7 @@ export const useStyles = createUseStyles({
     textTransform: "uppercase",
     letterSpacing: "0.0109375em",
     lineHeight: "135%",
+    margin: "0",
   },
   [`@media (min-width: ${SCREEN_TABLET.MIN}px)`]: {
     button: {
