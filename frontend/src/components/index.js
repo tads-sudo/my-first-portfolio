@@ -6,3 +6,4 @@ export * from "./Navbar";
 export * from "./Topbar";
 export * from "./Card";
 export * from "./Form";
+export * from "./Skills";
