@@ -9,5 +9,3 @@ export const Text = ({ children, bold = false, style = {} }) => {
     </p>
   );
 };
-
-export default Text;

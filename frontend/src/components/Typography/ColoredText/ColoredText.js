@@ -12,4 +12,3 @@ ColoredText.propTypes = {
   children: PropTypes.string,
   color: PropTypes.oneOf(Object.keys(colorTheme)),
 };
-export default ColoredText;

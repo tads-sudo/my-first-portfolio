@@ -5,5 +5,3 @@ export const ButtonText = ({ children }) => {
   const classes = useStyles();
   return <p className={classes.button}>{children}</p>;
 };
-
-export default ButtonText;
