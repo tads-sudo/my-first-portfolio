@@ -5,5 +5,3 @@ export const Subtitle = ({ children, bold = false }) => {
   const classes = useStyles({ bold: bold });
   return <p className={classes.subtitle}>{children}</p>;
 };
-
-export default Subtitle;
