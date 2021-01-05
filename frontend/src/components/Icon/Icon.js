@@ -1,22 +1,20 @@
 import React from "react";
-// import { useStyles } from "./style";
-import { color as themeColor } from "../../theme";
+import { useStyles } from "./style";
+import { ReactSVG } from "react-svg";
 
-export const Icon = ({ src, color = "SECONDARY", style }) => {
-  // const classes = useStyles();
+export const Icon = ({ name, color, size = 24, transform, style }) => {
+  const classes = useStyles({
+    colorProps: color,
+    sizeProps: size,
+    transformProps: transform,
+  });
   return (
-    <svg
-      // className={classes.icon}
+    <ReactSVG
       style={style}
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path d={src} fill={themeColor[color]} />
-    </svg>
+      src={`resources/Icons/${name}.svg`}
+      beforeInjection={(svg) => {
+        svg.setAttribute("class", `${classes.svg}`);
+      }}
+    />
   );
 };
-
-export default Icon;
