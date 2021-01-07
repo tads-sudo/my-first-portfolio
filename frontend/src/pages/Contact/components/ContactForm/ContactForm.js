@@ -7,8 +7,7 @@ import {
   FormRow,
   FormTextArea,
   Button,
-  Text,
-  ColoredText,
+  TextProperty,
   ButtonText,
 } from "../../../../components";
 
@@ -35,7 +34,7 @@ export const ContactForm = () => {
       </FormGroup>
       <Button size="LG" corner="8">
         <ButtonText>
-          <ColoredText color="BLACK">SUBMIT YOUR MESSAGE</ColoredText>
+          <TextProperty color="BLACK">SUBMIT YOUR MESSAGE</TextProperty>
         </ButtonText>
       </Button>
     </Form>
