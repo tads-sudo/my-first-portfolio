@@ -9,6 +9,7 @@ export const useStyles = createUseStyles({
     fontSize: "0.75em",
     letterSpacing: "0.0075em",
     lineHeight: "135%",
+    margin: 0,
   },
   [`@media (min-width: ${SCREEN_TABLET.MIN}px)`]: {
     smallText: {
