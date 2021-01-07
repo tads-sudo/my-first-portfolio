@@ -9,6 +9,7 @@ export const useStyles = createUseStyles({
     fontFamily: "Montserrat, sans-serif",
     fontWeight: "bold",
     letterSpacing: "0em",
+    margin: "0",
   },
   [`@media (min-width: ${SCREEN_TABLET.MIN}px)`]: {
     heading: {
