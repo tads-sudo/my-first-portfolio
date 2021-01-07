@@ -9,6 +9,7 @@ export const useStyles = createUseStyles({
     fontWeight: "500",
     letterSpacing: "-0.0325em",
     lineHeight: "110%",
+    margin: "0",
   },
   [`@media (min-width: ${SCREEN_TABLET.MIN}px)`]: {
     heading: {
