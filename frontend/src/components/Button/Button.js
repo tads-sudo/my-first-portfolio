@@ -1,5 +1,7 @@
 import React from "react";
 import { useStyles } from "./style";
+import { NavLink } from "react-router-dom";
+import { motion } from "framer-motion";
 
 export const Button = ({
   children,
@@ -8,6 +10,8 @@ export const Button = ({
   corner = "0",
   disabled = false,
   type = "fill",
+  whileHover,
+  whileTap,
 }) => {
   const classes = useStyles({
     colorProps: color,
@@ -16,9 +20,14 @@ export const Button = ({
     typeProps: type,
   });
   return (
-    <button className={classes.button} disabled={disabled}>
+    <motion.button
+      className={classes.button}
+      disabled={disabled}
+      whileHover={whileHover}
+      whileTap={whileTap}
+    >
       {children}
-    </button>
+    </motion.button>
   );
 };
 
@@ -29,6 +38,10 @@ export const ButtonLink = ({
   size = "LG",
   corner = "0",
   type = "fill",
+  target = "",
+  rel = "",
+  whileHover,
+  whileTap,
 }) => {
   const classes = useStyles({
     colorProps: color,
@@ -37,13 +50,14 @@ export const ButtonLink = ({
     typeProps: type,
   });
   return (
-    <a
-      href={href}
-      target="_blank"
-      rel="noreferrer noopener"
+    <motion.span
       className={classes.button}
+      whileHover={whileHover}
+      whileTap={whileTap}
     >
-      {children}
-    </a>
+      <NavLink className={classes.navlink} to={href} target={target} rel={rel}>
+        {children}
+      </NavLink>
+    </motion.span>
   );
 };
