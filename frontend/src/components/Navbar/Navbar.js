@@ -1,23 +1,25 @@
 import React from "react";
 import { useStyles } from "./style";
 import { Brand } from "./Brand";
-import { IconWrapper } from "./IconWrapper";
-import { Menu } from "./Menu";
 import { Items } from "./Items";
 import { Item } from "./Item";
+import { MenuToggle } from "../../components";
+import { motion } from "framer-motion";
 
-export const Navbar = ({ toggle }) => {
+export const Navbar = ({ toggle, isOpen }) => {
   const classes = useStyles();
 
   return (
-    <nav className={classes.nav}>
-      <Brand />
-      <IconWrapper onClick={toggle}>
-        <Menu />
-      </IconWrapper>
+    <motion.nav
+      className={classes.nav}
+      initial={false}
+      animate={isOpen ? "open" : "closed"}
+    >
+      <Brand toggle={toggle} />
+      <MenuToggle toggle={toggle} />
       <Items>
         <Item />
       </Items>
-    </nav>
+    </motion.nav>
   );
 };

@@ -7,3 +7,4 @@ export * from "./Card";
 export * from "./Form";
 export * from "./SkillIcon";
 export * from "./SocialIcon";
+export * from "./MenuToggle";
