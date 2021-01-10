@@ -11,7 +11,7 @@ export const useStyles = createUseStyles({
     background: color.SECONDARY,
     top: "0",
     position: "sticky",
-    zIndex: "10",
+    zIndex: "1001",
   },
   [`@media (min-width: ${SCREEN_TABLET.MIN}px)`]: {
     nav: {
