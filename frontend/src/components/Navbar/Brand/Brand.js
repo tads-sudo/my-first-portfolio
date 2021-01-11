@@ -2,11 +2,11 @@ import React from "react";
 import { useStyles } from "./style";
 import { NavLink } from "react-router-dom";
 
-export const Brand = () => {
+export const Brand = ({ handleCloseMenu }) => {
   const classes = useStyles();
 
   return (
-    <NavLink to="/about">
+    <NavLink to="/about" onClick={handleCloseMenu}>
       <svg
         className={classes.svg}
         viewBox="0 0 86 60"
