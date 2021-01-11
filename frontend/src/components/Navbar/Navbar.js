@@ -6,7 +6,7 @@ import { Item } from "./Item";
 import { MenuToggle } from "../../components";
 import { motion } from "framer-motion";
 
-export const Navbar = ({ toggle, isOpen }) => {
+export const Navbar = ({ toggle, isOpen, handleCloseMenu }) => {
   const classes = useStyles();
 
   return (
@@ -15,7 +15,7 @@ export const Navbar = ({ toggle, isOpen }) => {
       initial={false}
       animate={isOpen ? "open" : "closed"}
     >
-      <Brand toggle={toggle} />
+      <Brand handleCloseMenu={handleCloseMenu} />
       <MenuToggle toggle={toggle} />
       <Items>
         <Item />
