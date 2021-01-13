@@ -9,6 +9,7 @@ export const useStyles = createUseStyles({
     fontWeight: props.bold ? "bold" : "500",
     letterSpacing: "0",
     lineHeight: "120%",
+    margin: "0",
   }),
   [`@media (min-width: ${SCREEN_TABLET.MIN}px)`]: {
     subtitle: (props) => ({
