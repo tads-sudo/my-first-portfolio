@@ -9,8 +9,7 @@ export const useStyles = createUseStyles({
     fontWeight: "500",
     letterSpacing: "0.014375em",
     lineHeight: "135%",
-    marginTop: "0",
-    marginBottom: "10px",
+    margin: "0",
   },
   [`@media (min-width: ${SCREEN_TABLET.MIN}px)`]: {
     heading: {
@@ -26,7 +25,6 @@ export const useStyles = createUseStyles({
       fontWeight: "bold",
       letterSpacing: "0.0775em",
       lineHeight: "110%",
-      marginBottom: "12px",
     },
   },
 });
