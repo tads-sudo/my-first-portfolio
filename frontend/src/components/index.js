@@ -9,3 +9,5 @@ export * from "./SkillIcon";
 export * from "./SocialIcon";
 export * from "./MenuToggle";
 export * from "./BackgroundElement";
+export * from "./CompanyLogo";
+export * from "./Footer";
