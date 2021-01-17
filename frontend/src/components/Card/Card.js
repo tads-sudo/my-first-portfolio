@@ -1,10 +1,12 @@
 import React from "react";
 import { useStyles } from "./style";
-export const Card = ({ children, style }) => {
+import { motion } from "framer-motion";
+
+export const Card = ({ children, style, ...props }) => {
   const classes = useStyles();
   return (
-    <div className={classes.card} style={style}>
+    <motion.div className={classes.card} style={style} {...props}>
       {children}
-    </div>
+    </motion.div>
   );
 };
