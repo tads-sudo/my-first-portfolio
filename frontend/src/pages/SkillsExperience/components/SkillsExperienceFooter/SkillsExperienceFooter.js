@@ -9,12 +9,13 @@ import {
   ButtonLink,
 } from "../../../../components";
 import { Icon } from "../../../../resources";
+import { FooterAnimation, SocialIconAnimation } from "../../animations";
 
 export const SkillsExperienceFooter = () => {
   const classes = useStyles();
   return (
     <>
-      <div className={classes.footer}>
+      <FooterAnimation className={classes.footer}>
         <Footer>
           <div className={classes.footerContainer}>
             <div className={classes.footerColumn1}>
@@ -28,7 +29,16 @@ export const SkillsExperienceFooter = () => {
                 </Subtitle>
               </div>
               <div className={classes.footerrow2}>
-                <ButtonLink href="/contact" size="SM" corner={8}>
+                <ButtonLink
+                  href="/contact"
+                  size="SM"
+                  corner={8}
+                  whileHover={{
+                    scale: 1.05,
+                    boxShadow: "0px 0px 6px rgb(255,113,41)",
+                  }}
+                  whileTap={{ scale: 0.8 }}
+                >
                   <SmallText>
                     <TextProperty color="BLACK">GET IN TOUCH</TextProperty>
                   </SmallText>
@@ -39,23 +49,27 @@ export const SkillsExperienceFooter = () => {
               <div className={classes.footerSocialMedia}>
                 <div className={classes.socialMediaRow1}>
                   <div className={classes.footerIconText}>
-                    <SocialIcon>
-                      <Icon.Gmail color="#828276" />
-                    </SocialIcon>
+                    <SocialIconAnimation>
+                      <SocialIcon>
+                        <Icon.Gmail color="#828276" />
+                      </SocialIcon>
+                    </SocialIconAnimation>
                     <Subtitle>Gmail</Subtitle>
                   </div>
                 </div>
                 <div className={classes.footerIconText}>
-                  <SocialIcon>
-                    <Icon.Messenger color="#828276" />
-                  </SocialIcon>
+                  <SocialIconAnimation>
+                    <SocialIcon>
+                      <Icon.Messenger color="#828276" />
+                    </SocialIcon>
+                  </SocialIconAnimation>
                   <Subtitle>Messenger</Subtitle>
                 </div>
               </div>
             </div>
           </div>
         </Footer>
-      </div>
+      </FooterAnimation>
     </>
   );
 };

@@ -30,17 +30,25 @@ import {
   Jss,
   Framer,
 } from "../../../../resources";
+import { Heading3Animation } from "../../animations";
 
 export const SkillsSection = () => {
   const classes = useStyles();
   return (
     <>
-      <div className={classes.heading3}>
+      <Heading3Animation
+        className={classes.heading3}
+        transition={{ delay: "0.2" }}
+      >
         <Heading3>SKILLS</Heading3>
-      </div>
+      </Heading3Animation>
       <div className={classes.skillsContainer}>
         {/* HTML & CSS */}
-        <Card>
+        <Card
+          initial={{ x: -20, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ delay: 0.6 }}
+        >
           <Subtitle style={{ marginBottom: "15px" }}>Html & Css</Subtitle>
           <div className={classes.rowSkills}>
             <div className={classes.skill}>
@@ -70,7 +78,11 @@ export const SkillsSection = () => {
           </div>
         </Card>
         {/* JAVSCRIPT */}
-        <Card>
+        <Card
+          initial={{ x: -20, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ delay: 0.8 }}
+        >
           <Subtitle style={{ marginBottom: "15px" }}>Javascript</Subtitle>
           <div className={classes.rowSkills}>
             <div className={classes.skill}>
@@ -94,7 +106,11 @@ export const SkillsSection = () => {
           </div>
         </Card>
         {/* REACT */}
-        <Card>
+        <Card
+          initial={{ x: -20, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ delay: 1 }}
+        >
           <Subtitle style={{ marginBottom: "15px" }}>React</Subtitle>
           <div className={classes.rowSkills}>
             <div className={classes.skill}>
@@ -124,7 +140,11 @@ export const SkillsSection = () => {
           </div>
         </Card>
         {/* DESIGN */}
-        <Card>
+        <Card
+          initial={{ x: -20, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ delay: 1.2 }}
+        >
           <Subtitle style={{ marginBottom: "15px" }}>Design</Subtitle>
           <div className={classes.rowSkills}>
             <div className={classes.skill}>
@@ -154,7 +174,11 @@ export const SkillsSection = () => {
           </div>
         </Card>
         {/* BACKEND */}
-        <Card>
+        <Card
+          initial={{ x: -20, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ delay: 1.4 }}
+        >
           <Subtitle style={{ marginBottom: "15px" }}>Backend</Subtitle>
           <div className={classes.rowSkills}>
             <div className={classes.skill}>
@@ -184,7 +208,11 @@ export const SkillsSection = () => {
           </div>
         </Card>
         {/* OTHERS */}
-        <Card>
+        <Card
+          initial={{ x: -20, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ delay: 1.6 }}
+        >
           <Subtitle style={{ marginBottom: "15px" }}>Others</Subtitle>
           <div className={classes.rowSkills}>
             <div className={classes.skill}>
