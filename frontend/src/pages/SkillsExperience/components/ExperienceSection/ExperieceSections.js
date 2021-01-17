@@ -17,18 +17,26 @@ import {
   CtiTabDesk,
   Icon,
 } from "../../../../resources";
+import { Heading3Animation } from "../../animations";
 
 export const ExperieceSections = () => {
   const classes = useStyles();
   return (
     <>
-      <div className={classes.heading3}>
+      <Heading3Animation
+        className={classes.heading3}
+        transition={{ delay: "1.8" }}
+      >
         <Heading3>EXPERIENCE</Heading3>
-      </div>
+      </Heading3Animation>
       <div className={classes.experienceContainer}>
         {/* DISPLAY NONE TO DESKTOP */}
         <div className={classes.thousandmindsMobTab}>
-          <Card>
+          <Card
+            initial={{ x: -20, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ delay: 2 }}
+          >
             <div className={classes.cardContainer}>
               <div className={classes.logoAndTitle}>
                 <div className={classes.companyMobLogo}>
@@ -135,7 +143,11 @@ export const ExperieceSections = () => {
           </Card>
         </div>
         <div className={classes.ctiMobTab}>
-          <Card>
+          <Card
+            initial={{ x: -20, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ delay: 2.2 }}
+          >
             <div className={classes.cardContainer}>
               <div className={classes.logoAndTitle}>
                 <div className={classes.companyMobLogo}>
