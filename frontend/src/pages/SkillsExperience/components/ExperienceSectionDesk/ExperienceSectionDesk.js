@@ -7,12 +7,13 @@ import {
   SocialIcon,
 } from "../../../../components";
 import { CtiTabDesk, Icon, ThousandmindsTabDesk } from "../../../../resources";
+import { TimelineAnimation } from "../../animations";
 
 export const ExperienceSectionDesk = () => {
   const classes = useStyles();
   return (
     <>
-      <div className={classes.timeline}>
+      <TimelineAnimation className={classes.timeline} transition={{ delay: 2 }}>
         <div className={classes.timelineBody}>
           <div className={classes.timelineItem}>
             <div className={classes.time}>
@@ -35,7 +36,7 @@ export const ExperienceSectionDesk = () => {
               </div>
               <div className={classes.rightContent}>
                 <div className={classes.rightContentSubtitle}>
-                  <Text bold>Accomplishment</Text>
+                  <Text bold>Accomplishments</Text>
                 </div>
                 <div className={classes.itemss}>
                   <div className={classes.itemm}>
@@ -100,9 +101,12 @@ export const ExperienceSectionDesk = () => {
             </div>
           </div>
         </div>
-      </div>
+      </TimelineAnimation>
       <div className={classes.cti}>
-        <div className={classes.timeline}>
+        <TimelineAnimation
+          className={classes.timeline}
+          transition={{ delay: 2.2 }}
+        >
           <div className={classes.timelineBody}>
             <div className={classes.timelineItem}>
               <div className={classes.time}>
@@ -125,7 +129,7 @@ export const ExperienceSectionDesk = () => {
                 </div>
                 <div className={classes.rightContent}>
                   <div className={classes.rightContentSubtitle}>
-                    <Text bold>Accomplishment</Text>
+                    <Text bold>Accomplishments</Text>
                   </div>
                   <div className={classes.itemss}>
                     <div className={classes.itemm}>
@@ -160,7 +164,7 @@ export const ExperienceSectionDesk = () => {
               </div>
             </div>
           </div>
-        </div>
+        </TimelineAnimation>
       </div>
     </>
   );
