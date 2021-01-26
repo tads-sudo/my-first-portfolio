@@ -46,16 +46,7 @@ export const AboutView = () => {
                   React-Jss, Framer-Motion, Design System, and Figma
                 </TextProperty>
               </Text>
-              <ButtonLink
-                whileHover={{
-                  scale: 1.05,
-                  boxShadow: "0px 0px 6px rgb(255,113,41)",
-                }}
-                whileTap={{ scale: 0.8 }}
-                href="/projects"
-                size="SM"
-                corner="8"
-              >
+              <ButtonLink to="/projects" size="MD" corner="8">
                 <SmallText>
                   <TextProperty color="BLACK" weight="BOLD">
                     CHECK OUT MY WORK
