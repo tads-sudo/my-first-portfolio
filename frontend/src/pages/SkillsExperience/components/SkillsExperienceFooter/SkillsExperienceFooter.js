@@ -29,16 +29,7 @@ export const SkillsExperienceFooter = () => {
                 </Subtitle>
               </div>
               <div className={classes.footerrow2}>
-                <ButtonLink
-                  href="/contact"
-                  size="SM"
-                  corner={8}
-                  whileHover={{
-                    scale: 1.05,
-                    boxShadow: "0px 0px 6px rgb(255,113,41)",
-                  }}
-                  whileTap={{ scale: 0.8 }}
-                >
+                <ButtonLink to="/contact" size="MD" corner={8}>
                   <SmallText>
                     <TextProperty color="BLACK">GET IN TOUCH</TextProperty>
                   </SmallText>
