@@ -2,27 +2,32 @@ import React from "react";
 import { useStyles } from "./style";
 import { routes } from "../../../config";
 import { NavLink } from "react-router-dom";
+import { motion } from "framer-motion";
 
 export const Item = () => {
   const classes = useStyles();
+
+  const item = {
+    hidden: { y: -200, opacity: 0 },
+    visible: {
+      y: 0,
+      opacity: 1,
+    },
+  };
 
   return (
     <>
       {routes.map((route, index) => {
         return (
-          <li key={`nav-link-${index}`}>
+          <motion.li key={`nav-link-${index}`} variants={item}>
             <NavLink
               to={route.routePath}
               className={classes.navLink}
               activeClassName={classes.activeNavLinks}
-              // activeStyle={{
-              //   fontWeight: "bold",
-              //   color: "red",
-              // }}
             >
               {route.routeName}
             </NavLink>
-          </li>
+          </motion.li>
         );
       })}
     </>

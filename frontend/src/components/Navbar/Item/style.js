@@ -15,11 +15,6 @@ export const useStyles = createUseStyles({
     padding: "16px 25px",
     height: "100%",
     cursor: "pointer",
-    transition: "all 0.2s ease-in-out",
-    "&:hover": {
-      transition: "all 0.2s ease-in-out",
-      color: color.PRIMARY,
-    },
   },
   activeNavLinks: {
     color: color.PRIMARY,
