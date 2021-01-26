@@ -1,6 +1,6 @@
 import React from "react";
 import { useStyles } from "./style";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
 export const Button = ({
@@ -10,8 +10,7 @@ export const Button = ({
   corner = "0",
   disabled = false,
   type = "fill",
-  whileHover,
-  whileTap,
+  ...props
 }) => {
   const classes = useStyles({
     colorProps: color,
@@ -20,12 +19,7 @@ export const Button = ({
     typeProps: type,
   });
   return (
-    <motion.button
-      className={classes.button}
-      disabled={disabled}
-      whileHover={whileHover}
-      whileTap={whileTap}
-    >
+    <motion.button className={classes.button} disabled={disabled} {...props}>
       {children}
     </motion.button>
   );
@@ -33,15 +27,16 @@ export const Button = ({
 
 export const ButtonLink = ({
   children,
-  href = "#",
   color = "PRIMARY",
   size = "LG",
   corner = "0",
   type = "fill",
-  target = "",
-  rel = "",
-  whileHover,
-  whileTap,
+  to,
+  href,
+  target,
+  rel,
+  isExternalLink = false,
+  ...props
 }) => {
   const classes = useStyles({
     colorProps: color,
@@ -49,15 +44,24 @@ export const ButtonLink = ({
     cornerProps: corner,
     typeProps: type,
   });
-  return (
-    <motion.span
-      className={classes.button}
-      whileHover={whileHover}
-      whileTap={whileTap}
-    >
-      <NavLink className={classes.navlink} to={href} target={target} rel={rel}>
+
+  if (isExternalLink) {
+    return (
+      <a
+        href={href}
+        target={target}
+        rel={rel}
+        className={classes.link}
+        {...props}
+      >
         {children}
-      </NavLink>
-    </motion.span>
+      </a>
+    );
+  }
+
+  return (
+    <Link className={classes.link} to={to} target={target} rel={rel} {...props}>
+      {children}
+    </Link>
   );
 };
