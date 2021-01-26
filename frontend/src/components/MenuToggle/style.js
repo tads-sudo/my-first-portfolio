@@ -3,6 +3,9 @@ import { SCREEN_TABLET, SCREEN_DESKTOP } from "../../theme";
 
 export const useStyles = createUseStyles({
   button: {
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
     outline: "none",
     border: "none",
     cursor: "pointer",
