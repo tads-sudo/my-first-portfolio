@@ -12,7 +12,7 @@ const Path = (props) => (
   />
 );
 
-export const MenuToggle = ({ toggle }) => {
+export const MenuToggle = ({ toggle, ...props }) => {
   const classes = useStyles();
   return (
     <motion.button
@@ -20,6 +20,7 @@ export const MenuToggle = ({ toggle }) => {
       onClick={toggle}
       initial={{ y: -200, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
+      {...props}
     >
       <svg width="23" height="23" viewBox="0 0 23 23">
         <Path
