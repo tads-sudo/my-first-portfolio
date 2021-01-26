@@ -9,6 +9,7 @@ export const BANDICOOT = "#828276";
 export const CONIFER = "#71ea41";
 export const TURQUISE_BLUE = "#4bedea";
 export const CHICAGO = "#5B5B53";
+export const NONE = "rgba(0,0,0,0)";
 
 export const color = {
   PRIMARY: BURNING_ORANGE,
@@ -21,6 +22,7 @@ export const color = {
   LINKS: TURQUISE_BLUE,
   BLACK: BLACK,
   WHITE: WHITE,
+  NONE: NONE,
 };
 
 // FONT WEIGHT
