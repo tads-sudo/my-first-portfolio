@@ -14,22 +14,28 @@ import {
 export const ContactForm = () => {
   return (
     <Form>
-      <FormGroup>
-        <FormInputLabel>Your name</FormInputLabel>
-        <FormInput placeholder="Name" />
-      </FormGroup>
       <FormRow>
         <FormGroup>
-          <FormInputLabel>Your company</FormInputLabel>
-          <FormInput placeholder="Company" />
+          <FormInputLabel>Your Name</FormInputLabel>
+          <FormInput placeholder="Name" />
         </FormGroup>
         <FormGroup>
-          <FormInputLabel>Your email</FormInputLabel>
+          <FormInputLabel>Company Name</FormInputLabel>
+          <FormInput placeholder="Company" />
+        </FormGroup>
+      </FormRow>
+      <FormRow>
+        <FormGroup>
+          <FormInputLabel>Email Address</FormInputLabel>
           <FormInput placeholder="Email" />
+        </FormGroup>
+        <FormGroup>
+          <FormInputLabel>Phone Number</FormInputLabel>
+          <FormInput placeholder="Number" />
         </FormGroup>
       </FormRow>
       <FormGroup>
-        <FormInputLabel>About your project</FormInputLabel>
+        <FormInputLabel>Project Details</FormInputLabel>
         <FormTextArea placeholder="Message" />
       </FormGroup>
       <Button size="LG" corner="8">
