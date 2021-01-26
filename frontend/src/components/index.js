@@ -11,3 +11,6 @@ export * from "./MenuToggle";
 export * from "./BackgroundElement";
 export * from "./CompanyLogo";
 export * from "./Footer";
+export * from "./CollapseButton";
+export * from "./Image";
+export * from "./Load";
