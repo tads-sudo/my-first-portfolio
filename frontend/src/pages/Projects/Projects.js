@@ -11,7 +11,11 @@ import {
 import { projectCategories } from "../../config";
 import { Icon } from "../../resources";
 
-export const Categories = ({ filter }) => {
+export const Categories = ({ setFilterValue }) => {
+  const filter = (value) => {
+    setFilterValue(value);
+  };
+
   return (
     <>
       {projectCategories.categories.map((category, index) => {
@@ -62,12 +66,19 @@ export const Functionalities = ({ project, classes, projectIndex }) => {
   );
 };
 
-export const Technologies = ({ project, projectIndex }) => {
+export const Technologies = ({ project, projectIndex, setFilterValue }) => {
+  const filter = (value) => {
+    setFilterValue(value);
+  };
+
   return (
     <>
       {project.technologies.map((technology, index) => {
         return (
           <Button
+            onClick={() => {
+              filter(technology.id);
+            }}
             key={`technologies-${projectIndex}-${index}`}
             type="OUTLINE"
             size="SM"
