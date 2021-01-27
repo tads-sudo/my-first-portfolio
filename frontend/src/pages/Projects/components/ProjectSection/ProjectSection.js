@@ -15,6 +15,7 @@ import { Icon } from "../../../../resources";
 import { projects } from "../../../../config";
 import { TECHNOLOGIES } from "../../../../constants";
 import { motion } from "framer-motion";
+import { ProjectCardAnimation } from "../../animations/ProjectCardAnimation/ProjectCardAnimation";
 
 export const ProjectSection = ({ filterValue }) => {
   const classes = useStyles();
@@ -34,12 +35,9 @@ export const ProjectSection = ({ filterValue }) => {
     <>
       {filteredProjects.map((project, projectIndex) => {
         return (
-          <motion.div
+          <ProjectCardAnimation
             className={classes.projectsCard}
             key={`projects-${projectIndex}`}
-            initial={{ x: -20, opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
-            transition={{ delay: 0.6 }}
           >
             <Card>
               <div className={classes.cardSection}>
@@ -137,7 +135,7 @@ export const ProjectSection = ({ filterValue }) => {
                 </div>
               </div>
             </Card>
-          </motion.div>
+          </ProjectCardAnimation>
         );
       })}
     </>
