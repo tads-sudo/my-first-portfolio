@@ -41,8 +41,11 @@ export const ProjectSection = ({ filterValue, setFilterValue }) => {
       <ProjectCardAnimation>
         {filteredProjects.map((project, projectIndex) => {
           return (
-            <div className={classes.projectsCard}>
-              <Card variants={card} key={`projects-${projectIndex}`}>
+            <div
+              className={classes.projectsCard}
+              key={`projects-${projectIndex}`}
+            >
+              <Card variants={card}>
                 <div className={classes.cardSection}>
                   <div className={classes.leftSection}>
                     <Subtitle bold style={{ marginBottom: "10px" }}>
