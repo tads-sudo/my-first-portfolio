@@ -25,10 +25,6 @@ export const FilterSection = ({ setFilterValue }) => {
     });
   };
 
-  const filter = (value) => {
-    setFilterValue(value);
-  };
-
   return (
     <>
       <Heading3Animation
@@ -52,7 +48,7 @@ export const FilterSection = ({ setFilterValue }) => {
           <AnimatePresence initial={false}>
             {isShow && (
               <CategoriesAnimation className={classes.categories}>
-                <Categories filter={filter} />
+                <Categories setFilterValue={setFilterValue} />
               </CategoriesAnimation>
             )}
           </AnimatePresence>
