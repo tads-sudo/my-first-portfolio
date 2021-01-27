@@ -1,25 +1,44 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from "react";
+import { Topbar, Navbar } from "./components";
+import {
+  AboutView,
+  ContactView,
+  ProjectsView,
+  SkillsExperienceView,
+} from "./pages";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
-function App() {
+export const App = () => {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggle = () => {
+    setIsOpen((currentState) => {
+      return !currentState;
+    });
+  };
+
+  const handleCloseMenu = () => {
+    setIsOpen(false);
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Navbar
+        isOpen={isOpen}
+        toggle={toggle}
+        handleCloseMenu={handleCloseMenu}
+      />
+      <Topbar isOpen={isOpen} toggle={toggle} />
+      <Switch>
+        <Route path="/about" exact component={AboutView} />
+        <Route
+          path="/skills-&-experience"
+          exact
+          component={SkillsExperienceView}
+        />
+        <Route path="/projects" exact component={ProjectsView} />
+        <Route path="/contact" exact component={ContactView} />
+      </Switch>
+    </Router>
   );
-}
-
-export default App;
+};
