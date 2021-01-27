@@ -11,7 +11,10 @@ export const ProjectsView = () => {
     <section>
       <div className={classes.container}>
         <FilterSection setFilterValue={setFilterValue} />
-        <ProjectSection filterValue={filterValue} />
+        <ProjectSection
+          filterValue={filterValue}
+          setFilterValue={setFilterValue}
+        />
         <ProjectFooter />
       </div>
     </section>
