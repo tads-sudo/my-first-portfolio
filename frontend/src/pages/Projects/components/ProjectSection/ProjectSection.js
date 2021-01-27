@@ -3,19 +3,16 @@ import { useStyles } from "./style";
 import {
   Card,
   Subtitle,
-  Button,
   TextProperty,
   Text,
   SocialIcon,
   ButtonLink,
-  SmallText,
-  Image,
 } from "../../../../components";
 import { Icon } from "../../../../resources";
 import { projects } from "../../../../config";
 import { TECHNOLOGIES } from "../../../../constants";
-import { motion } from "framer-motion";
 import { ProjectCardAnimation } from "../../animations/ProjectCardAnimation/ProjectCardAnimation";
+import { Functionalities, Images, Technologies } from "../../Projects";
 
 export const ProjectSection = ({ filterValue }) => {
   const classes = useStyles();
@@ -52,19 +49,11 @@ export const ProjectSection = ({ filterValue }) => {
                     {project.description}
                   </Text>
                   <div className={classes.items}>
-                    {project.functionalities.map((functionality, index) => {
-                      return (
-                        <div
-                          className={classes.item}
-                          key={`functionalities-${projectIndex}-${index}`}
-                        >
-                          <SocialIcon>
-                            <Icon.Bullet />
-                          </SocialIcon>
-                          <Text bold>{functionality}</Text>
-                        </div>
-                      );
-                    })}
+                    <Functionalities
+                      project={project}
+                      projectIndex={projectIndex}
+                      classes={classes}
+                    />
                   </div>
                   <div className={classes.buttonLink}>
                     <ButtonLink
@@ -89,48 +78,15 @@ export const ProjectSection = ({ filterValue }) => {
                     Technologies:
                   </Text>
                   <div className={classes.technologies}>
-                    {project.technologies.map((technology, index) => {
-                      return (
-                        <Button
-                          key={`technologies-${projectIndex}-${index}`}
-                          type="OUTLINE"
-                          size="SM"
-                          color="SUBTLE"
-                          corner={8}
-                          whileHover={{
-                            boxShadow: "0 0 0 2px rgba(130,130,118,1)",
-                          }}
-                          whileFocus={{
-                            boxShadow: "0 0 0 2px rgba(130,130,118,1)",
-                          }}
-                          whileTap={{ scale: 0.9 }}
-                        >
-                          <SmallText>
-                            <TextProperty color="TERTIARY">
-                              {technology.label}
-                            </TextProperty>
-                          </SmallText>
-                        </Button>
-                      );
-                    })}
+                    <Technologies
+                      project={project}
+                      projectIndex={projectIndex}
+                    />
                   </div>
                 </div>
                 <div className={classes.rightSection}>
                   <div className={classes.images}>
-                    {project.images.map((image, index) => {
-                      return (
-                        <Image
-                          src={process.env.PUBLIC_URL + image}
-                          key={`images-${projectIndex}-${index}`}
-                          widthM="100%"
-                          heightM="100%"
-                          widthT="100%"
-                          heightT="100%"
-                          widthD="auto"
-                          heightD="auto"
-                        />
-                      );
-                    })}
+                    <Images project={project} projectIndex={projectIndex} />
                   </div>
                 </div>
               </div>
