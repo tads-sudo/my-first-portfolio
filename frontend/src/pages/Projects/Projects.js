@@ -1,6 +1,15 @@
 import React from "react";
-import { Button, ButtonText, TextProperty } from "../../components";
+import {
+  Button,
+  ButtonText,
+  SocialIcon,
+  TextProperty,
+  Text,
+  SmallText,
+  Image,
+} from "../../components";
 import { projectCategories } from "../../config";
+import { Icon } from "../../resources";
 
 export const Categories = ({ filter }) => {
   return (
@@ -27,6 +36,76 @@ export const Categories = ({ filter }) => {
               <TextProperty color="TERTIARY">{category.label}</TextProperty>
             </ButtonText>
           </Button>
+        );
+      })}
+    </>
+  );
+};
+
+export const Functionalities = ({ project, classes, projectIndex }) => {
+  return (
+    <>
+      {project.functionalities.map((functionality, index) => {
+        return (
+          <div
+            className={classes.item}
+            key={`functionalities-${projectIndex}-${index}`}
+          >
+            <SocialIcon>
+              <Icon.Bullet />
+            </SocialIcon>
+            <Text bold>{functionality}</Text>
+          </div>
+        );
+      })}
+    </>
+  );
+};
+
+export const Technologies = ({ project, projectIndex }) => {
+  return (
+    <>
+      {project.technologies.map((technology, index) => {
+        return (
+          <Button
+            key={`technologies-${projectIndex}-${index}`}
+            type="OUTLINE"
+            size="SM"
+            color="SUBTLE"
+            corner={8}
+            whileHover={{
+              boxShadow: "0 0 0 2px rgba(130,130,118,1)",
+            }}
+            whileFocus={{
+              boxShadow: "0 0 0 2px rgba(130,130,118,1)",
+            }}
+            whileTap={{ scale: 0.9 }}
+          >
+            <SmallText>
+              <TextProperty color="TERTIARY">{technology.label}</TextProperty>
+            </SmallText>
+          </Button>
+        );
+      })}
+    </>
+  );
+};
+
+export const Images = ({ project, projectIndex }) => {
+  return (
+    <>
+      {project.images.map((image, index) => {
+        return (
+          <Image
+            src={process.env.PUBLIC_URL + image}
+            key={`images-${projectIndex}-${index}`}
+            widthM="100%"
+            heightM="100%"
+            widthT="100%"
+            heightT="100%"
+            widthD="auto"
+            heightD="auto"
+          />
         );
       })}
     </>
