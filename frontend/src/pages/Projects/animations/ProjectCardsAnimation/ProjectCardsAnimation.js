@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-export const ProjectCardAnimation = ({ children }) => {
+export const ProjectCardsAnimation = ({ children }) => {
   const card = {
     hidden: {
       scale: 0,
