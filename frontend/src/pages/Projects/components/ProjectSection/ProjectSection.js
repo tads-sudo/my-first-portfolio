@@ -11,8 +11,9 @@ import {
 import { Icon } from "../../../../resources";
 import { projects } from "../../../../config";
 import { TECHNOLOGIES } from "../../../../constants";
-import { ProjectCardAnimation } from "../../animations/ProjectCardAnimation/ProjectCardAnimation";
+import { ProjectCardsAnimation } from "../../animations/ProjectCardsAnimation/ProjectCardsAnimation";
 import { Functionalities, Images, Technologies } from "../../Projects";
+import { ProjectCardAnimation } from "../../animations";
 
 export const ProjectSection = ({ filterValue, setFilterValue }) => {
   const classes = useStyles();
@@ -28,24 +29,16 @@ export const ProjectSection = ({ filterValue, setFilterValue }) => {
     return false;
   });
 
-  const card = {
-    hidden: { x: -20, opacity: 0 },
-    visible: {
-      x: 0,
-      opacity: 1,
-    },
-  };
-
   return (
     <>
-      <ProjectCardAnimation>
+      <ProjectCardsAnimation>
         {filteredProjects.map((project, projectIndex) => {
           return (
-            <div
+            <ProjectCardAnimation
               className={classes.projectsCard}
               key={`projects-${projectIndex}`}
             >
-              <Card variants={card}>
+              <Card>
                 <div className={classes.cardSection}>
                   <div className={classes.leftSection}>
                     <Subtitle bold style={{ marginBottom: "10px" }}>
@@ -101,10 +94,10 @@ export const ProjectSection = ({ filterValue, setFilterValue }) => {
                   </div>
                 </div>
               </Card>
-            </div>
+            </ProjectCardAnimation>
           );
         })}
-      </ProjectCardAnimation>
+      </ProjectCardsAnimation>
     </>
   );
 };
