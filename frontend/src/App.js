@@ -6,7 +6,12 @@ import {
   ProjectsView,
   SkillsExperienceView,
 } from "./pages";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Redirect,
+  Route,
+  Switch,
+} from "react-router-dom";
 
 export const App = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -30,14 +35,20 @@ export const App = () => {
       />
       <Topbar isOpen={isOpen} toggle={toggle} />
       <Switch>
-        <Route path="/about" exact component={AboutView} />
+        <Route path="/contact" exact component={ContactView} />
+        <Route path="/projects" exact component={ProjectsView} />
         <Route
           path="/skills-&-experience"
           exact
           component={SkillsExperienceView}
         />
-        <Route path="/projects" exact component={ProjectsView} />
-        <Route path="/contact" exact component={ContactView} />
+        <Route path="/about" exact component={AboutView} />
+        <Route exact path="">
+          <Redirect to="/about" />
+        </Route>
+        <Route exact path="/">
+          <Redirect to="/about" />
+        </Route>
       </Switch>
     </Router>
   );
