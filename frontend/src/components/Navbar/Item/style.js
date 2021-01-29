@@ -18,7 +18,6 @@ export const useStyles = createUseStyles({
   },
   activeNavLinks: {
     color: color.PRIMARY,
-    borderBottom: "3px solid",
   },
   [`@media (min-width: ${SCREEN_TABLET.MIN}px)`]: {
     navLink: {
