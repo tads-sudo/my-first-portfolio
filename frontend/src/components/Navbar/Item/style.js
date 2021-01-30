@@ -12,12 +12,22 @@ export const useStyles = createUseStyles({
     display: "flex",
     alignItems: "center",
     textDecoration: "none",
-    padding: "16px 25px",
+    padding: "0 25px",
     height: "100%",
     cursor: "pointer",
+    transition: "0.3s ease-in-out",
+    "&:hover": {
+      padding: "16px 25px",
+      borderRadius: "20px",
+      background: "rgba(0, 0, 0, 35%)",
+      transition: "0.3s ease-in-out",
+    },
   },
   activeNavLinks: {
-    color: color.PRIMARY,
+    transition: "0.3s ease-in-out",
+    padding: "16px 25px",
+    borderRadius: "20px",
+    background: "rgba(0, 0, 0, 35%)",
   },
   [`@media (min-width: ${SCREEN_TABLET.MIN}px)`]: {
     navLink: {
