@@ -14,3 +14,4 @@ export * from "./Footer";
 export * from "./CollapseButton";
 export * from "./Image";
 export * from "./Load";
+export * from "./Scroll";

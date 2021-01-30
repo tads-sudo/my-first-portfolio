@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Topbar, Navbar } from "./components";
+import { Topbar, Navbar, ScrollToTop } from "./components";
 import {
   AboutView,
   ContactView,
@@ -28,6 +28,7 @@ export const App = () => {
 
   return (
     <Router>
+      <ScrollToTop />
       <Navbar
         isOpen={isOpen}
         toggle={toggle}
