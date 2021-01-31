@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Topbar, Navbar, ScrollToTop } from "./components";
+import { Topbar, Navbar, ScrollToTop, TopButton } from "./components";
 import { Routes } from "./routes";
 import { BrowserRouter as Router } from "react-router-dom";
 
@@ -15,6 +15,7 @@ export const App = () => {
   const handleCloseMenu = () => {
     setIsOpen(false);
   };
+
   return (
     <Router>
       <ScrollToTop />
@@ -25,6 +26,7 @@ export const App = () => {
       />
       <Topbar isOpen={isOpen} toggle={toggle} />
       <Routes />
+      <TopButton />
     </Router>
   );
 };
