@@ -2,13 +2,32 @@ import React, { useState } from "react";
 import { useStyles } from "./style";
 import { FilterSection, ProjectFooter, ProjectSection } from "./components";
 import { TECHNOLOGIES } from "../../constants";
+import { motion } from "framer-motion";
 
 export const ProjectsView = () => {
   const classes = useStyles();
   const [filterValue, setFilterValue] = useState(TECHNOLOGIES.SHOWALL.id);
 
+  const pageAnimation = {
+    initial: {
+      opacity: 0,
+    },
+    in: {
+      opacity: 1,
+    },
+    out: {
+      opacity: 0,
+    },
+  };
+
   return (
-    <section>
+    <motion.section
+      initial="initiial"
+      animate="in"
+      exit="out"
+      variants={pageAnimation}
+      // transition={{ type: "tween", ease: "anticipate" }}
+    >
       <div className={classes.container}>
         <FilterSection setFilterValue={setFilterValue} />
         <ProjectSection
@@ -17,6 +36,6 @@ export const ProjectsView = () => {
         />
         <ProjectFooter />
       </div>
-    </section>
+    </motion.section>
   );
 };

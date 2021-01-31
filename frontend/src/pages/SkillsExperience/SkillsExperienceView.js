@@ -6,17 +6,37 @@ import {
   ExperienceSectionDesk,
   SkillsExperienceFooter,
 } from "./components";
+import { motion } from "framer-motion";
 
 export const SkillsExperienceView = () => {
   const classes = useStyles();
+
+  const pageAnimation = {
+    initial: {
+      opacity: 0,
+    },
+    in: {
+      opacity: 1,
+    },
+    out: {
+      opacity: 0,
+    },
+  };
+
   return (
-    <section>
+    <motion.section
+      initial="initial"
+      animate="in"
+      exit="out"
+      variants={pageAnimation}
+      // transition={{ type: "tween", ease: "anticipate" }}
+    >
       <div className={classes.container}>
         <SkillsSection />
         <ExperieceSections />
         <ExperienceSectionDesk />
         <SkillsExperienceFooter />
       </div>
-    </section>
+    </motion.section>
   );
 };

@@ -1,10 +1,28 @@
 import React from "react";
 import { ContactForm, ContactFormWrapper } from "./components";
 import { Heading3, Text, LinkText } from "../../components";
-import { Icon, Skills } from "../../components";
+import { motion } from "framer-motion";
 export const ContactView = () => {
+  const pageAnimation = {
+    initial: {
+      opacity: 0,
+    },
+    in: {
+      opacity: 1,
+    },
+    out: {
+      opacity: 0,
+    },
+  };
+
   return (
-    <>
+    <motion.section
+      initial="initial"
+      animate="in"
+      exit="out"
+      variants={pageAnimation}
+      // transition={{ type: "tween", ease: "anticipate" }}
+    >
       <ContactFormWrapper>
         <Heading3>Contact Me</Heading3>
         <Text bold style={{ marginBottom: "24px" }}>
@@ -13,6 +31,6 @@ export const ContactView = () => {
         </Text>
         <ContactForm />
       </ContactFormWrapper>
-    </>
+    </motion.section>
   );
 };
