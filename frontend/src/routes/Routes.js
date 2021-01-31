@@ -5,12 +5,14 @@ import {
   ProjectsView,
   SkillsExperienceView,
 } from "../pages";
-import { Redirect, Route, Switch } from "react-router-dom";
+import { Redirect, Route, Switch, useLocation } from "react-router-dom";
+import { AnimatePresence } from "framer-motion";
 
 export const Routes = () => {
+  let location = useLocation();
   return (
-    <>
-      <Switch>
+    <AnimatePresence exitBeforeEnter>
+      <Switch location={location} key={location.pathname}>
         <Route path="/contact" exact component={ContactView} />
         <Route path="/projects" exact component={ProjectsView} />
         <Route
@@ -26,6 +28,6 @@ export const Routes = () => {
           <Redirect to="/about" />
         </Route>
       </Switch>
-    </>
+    </AnimatePresence>
   );
 };
