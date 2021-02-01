@@ -1,5 +1,5 @@
 import { createUseStyles } from "react-jss";
-import { SCREEN_TABLET, SCREEN_DESKTOP, color } from "../../../../theme";
+import { SCREEN_TABLET, SCREEN_DESKTOP } from "../../../../theme";
 
 export const useStyles = createUseStyles({
   heading3: {
@@ -43,7 +43,7 @@ export const useStyles = createUseStyles({
     marginBottom: "20px",
   },
   ctiMobTab: {
-    marginBottom: "50px",
+    marginBottom: "30px",
   },
   cardContainer: {
     display: "flex",
@@ -102,7 +102,7 @@ export const useStyles = createUseStyles({
       marginBottom: "30px",
     },
     ctiMobTab: {
-      marginBottom: "80px",
+      marginBottom: "30px",
     },
     cardBody: {
       marginBottom: "24px",
