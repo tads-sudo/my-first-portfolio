@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Topbar, Navbar, ScrollToTop, TopButton } from "./components";
+import { Topbar, Navbar, ScrollToTop } from "./components";
 import { Routes } from "./routes";
 
 export const App = () => {
@@ -25,7 +25,6 @@ export const App = () => {
       />
       <Topbar isOpen={isOpen} toggle={toggle} />
       <Routes />
-      <TopButton />
     </>
   );
 };

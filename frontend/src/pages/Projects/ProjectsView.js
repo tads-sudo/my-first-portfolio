@@ -3,6 +3,7 @@ import { useStyles } from "./style";
 import { FilterSection, ProjectFooter, ProjectSection } from "./components";
 import { TECHNOLOGIES } from "../../constants";
 import { motion } from "framer-motion";
+import { TopButton } from "../../components";
 
 export const ProjectsView = () => {
   const classes = useStyles();
@@ -21,21 +22,23 @@ export const ProjectsView = () => {
   };
 
   return (
-    <motion.section
-      initial="initiial"
-      animate="in"
-      exit="out"
-      variants={pageAnimation}
-      // transition={{ type: "tween", ease: "anticipate" }}
-    >
-      <div className={classes.container}>
-        <FilterSection setFilterValue={setFilterValue} />
-        <ProjectSection
-          filterValue={filterValue}
-          setFilterValue={setFilterValue}
-        />
-        <ProjectFooter />
-      </div>
-    </motion.section>
+    <>
+      <motion.section
+        initial="initiial"
+        animate="in"
+        exit="out"
+        variants={pageAnimation}
+      >
+        <div className={classes.container}>
+          <FilterSection setFilterValue={setFilterValue} />
+          <ProjectSection
+            filterValue={filterValue}
+            setFilterValue={setFilterValue}
+          />
+          <ProjectFooter />
+        </div>
+      </motion.section>
+      <TopButton />
+    </>
   );
 };
