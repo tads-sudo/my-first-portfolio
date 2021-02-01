@@ -7,6 +7,7 @@ import {
   SkillsExperienceFooter,
 } from "./components";
 import { motion } from "framer-motion";
+import { TopButton } from "../../components";
 
 export const SkillsExperienceView = () => {
   const classes = useStyles();
@@ -24,19 +25,21 @@ export const SkillsExperienceView = () => {
   };
 
   return (
-    <motion.section
-      initial="initial"
-      animate="in"
-      exit="out"
-      variants={pageAnimation}
-      // transition={{ type: "tween", ease: "anticipate" }}
-    >
-      <div className={classes.container}>
-        <SkillsSection />
-        <ExperieceSections />
-        <ExperienceSectionDesk />
-        <SkillsExperienceFooter />
-      </div>
-    </motion.section>
+    <>
+      <motion.section
+        initial="initial"
+        animate="in"
+        exit="out"
+        variants={pageAnimation}
+      >
+        <div className={classes.container}>
+          <SkillsSection />
+          <ExperieceSections />
+          <ExperienceSectionDesk />
+          <SkillsExperienceFooter />
+        </div>
+      </motion.section>
+      <TopButton />
+    </>
   );
 };
