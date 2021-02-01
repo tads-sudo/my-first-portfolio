@@ -69,11 +69,14 @@ export const useStyles = createUseStyles({
     gridColumnGap: "10px",
   },
   cti: {
-    marginBottom: "60px",
+    marginBottom: "0",
   },
   [`@media(min-width:${SCREEN_DESKTOP.MIN}px)`]: {
     timeline: {
       display: "flex",
+    },
+    cti: {
+      marginBottom: "60px",
     },
   },
 });
