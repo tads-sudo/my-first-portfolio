@@ -47,7 +47,7 @@ export const SkillsSection = () => {
         <Card
           initial={{ x: -20, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
-          transition={{ delay: 0.6 }}
+          transition={{ delay: 0.3 }}
         >
           <Subtitle style={{ marginBottom: "15px" }}>Html & Css</Subtitle>
           <div className={classes.rowSkills}>
@@ -81,7 +81,7 @@ export const SkillsSection = () => {
         <Card
           initial={{ x: -20, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
-          transition={{ delay: 0.8 }}
+          transition={{ delay: 0.4 }}
         >
           <Subtitle style={{ marginBottom: "15px" }}>Javascript</Subtitle>
           <div className={classes.rowSkills}>
@@ -109,7 +109,7 @@ export const SkillsSection = () => {
         <Card
           initial={{ x: -20, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
-          transition={{ delay: 1 }}
+          transition={{ delay: 0.5 }}
         >
           <Subtitle style={{ marginBottom: "15px" }}>React</Subtitle>
           <div className={classes.rowSkills}>
@@ -143,7 +143,7 @@ export const SkillsSection = () => {
         <Card
           initial={{ x: -20, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
-          transition={{ delay: 1.2 }}
+          transition={{ delay: 0.6 }}
         >
           <Subtitle style={{ marginBottom: "15px" }}>Design</Subtitle>
           <div className={classes.rowSkills}>
@@ -177,7 +177,7 @@ export const SkillsSection = () => {
         <Card
           initial={{ x: -20, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
-          transition={{ delay: 1.4 }}
+          transition={{ delay: 0.7 }}
         >
           <Subtitle style={{ marginBottom: "15px" }}>Backend</Subtitle>
           <div className={classes.rowSkills}>
@@ -211,7 +211,7 @@ export const SkillsSection = () => {
         <Card
           initial={{ x: -20, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
-          transition={{ delay: 1.6 }}
+          transition={{ delay: 0.8 }}
         >
           <Subtitle style={{ marginBottom: "15px" }}>Others</Subtitle>
           <div className={classes.rowSkills}>

@@ -13,7 +13,7 @@ export const ExperienceSectionDesk = () => {
   const classes = useStyles();
   return (
     <>
-      <TimelineAnimation className={classes.timeline} transition={{ delay: 2 }}>
+      <TimelineAnimation className={classes.timeline} transition={{ delay: 1 }}>
         <div className={classes.timelineBody}>
           <div className={classes.timelineItem}>
             <div className={classes.time}>
@@ -105,7 +105,7 @@ export const ExperienceSectionDesk = () => {
       <div className={classes.cti}>
         <TimelineAnimation
           className={classes.timeline}
-          transition={{ delay: 2.2 }}
+          transition={{ delay: 1.1 }}
         >
           <div className={classes.timelineBody}>
             <div className={classes.timelineItem}>
