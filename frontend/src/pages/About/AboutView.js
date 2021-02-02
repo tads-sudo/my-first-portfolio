@@ -16,6 +16,7 @@ import {
   BallchairAnimation,
   BgElementAnimation,
   HeadingsAnimation,
+  SocialIconsAnimation,
 } from "./animations";
 import { Icon, Circle, Ballchair } from "../../resources";
 import { motion } from "framer-motion";
@@ -42,7 +43,6 @@ export const AboutView = () => {
         animate="in"
         exit="out"
         variants={pageAnimation}
-        // transition={{ type: "tween", ease: "anticipate" }}
       >
         <BgElementAnimation>
           <BackgroundElement />
@@ -77,7 +77,7 @@ export const AboutView = () => {
               <Ballchair className={classes.ballChair} />
             </BallchairAnimation>
           </div>
-          <div className={classes.icons}>
+          <SocialIconsAnimation className={classes.icons}>
             <SocialIconAnimation href="...">
               <SocialIcon>
                 <Icon.Messenger color="#828276" />
@@ -98,7 +98,7 @@ export const AboutView = () => {
                 <Icon.Gmail color="#828276" />
               </SocialIcon>
             </SocialIconAnimation>
-          </div>
+          </SocialIconsAnimation>
         </div>
       </motion.section>
     </>
