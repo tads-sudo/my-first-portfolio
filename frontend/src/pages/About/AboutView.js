@@ -17,33 +17,16 @@ import {
   BgElementAnimation,
   HeadingsAnimation,
   SocialIconsAnimation,
+  PageAnimation,
 } from "./animations";
 import { Icon, Circle, Ballchair } from "../../resources";
-import { motion } from "framer-motion";
 
 export const AboutView = () => {
   const classes = useStyles();
 
-  const pageAnimation = {
-    initial: {
-      opacity: 0,
-    },
-    in: {
-      opacity: 1,
-    },
-    out: {
-      opacity: 0,
-    },
-  };
-
   return (
     <>
-      <motion.section
-        initial="initial"
-        animate="in"
-        exit="out"
-        variants={pageAnimation}
-      >
+      <PageAnimation>
         <BgElementAnimation>
           <BackgroundElement />
         </BgElementAnimation>
@@ -100,7 +83,7 @@ export const AboutView = () => {
             </SocialIconAnimation>
           </SocialIconsAnimation>
         </div>
-      </motion.section>
+      </PageAnimation>
     </>
   );
 };

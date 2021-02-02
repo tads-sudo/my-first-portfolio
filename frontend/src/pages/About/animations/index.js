@@ -4,3 +4,4 @@ export * from "./BallchairAnimation";
 export * from "./BgElementAnimation";
 export * from "./HeadingsAnimation";
 export * from "./SocialIconsAnimation";
+export * from "./PageAnimation";
