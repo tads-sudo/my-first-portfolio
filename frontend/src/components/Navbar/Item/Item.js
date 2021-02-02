@@ -8,10 +8,11 @@ export const Item = () => {
   const classes = useStyles();
 
   const item = {
-    hidden: { y: -200, opacity: 0 },
+    hidden: {
+      scale: 0,
+    },
     visible: {
-      y: 0,
-      opacity: 1,
+      scale: 1,
     },
   };
 

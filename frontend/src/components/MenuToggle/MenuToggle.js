@@ -18,8 +18,8 @@ export const MenuToggle = ({ toggle, ...props }) => {
     <motion.button
       className={classes.button}
       onClick={toggle}
-      initial={{ y: -200, opacity: 0 }}
-      animate={{ y: 0, opacity: 1 }}
+      initial={{ scale: 0 }}
+      animate={{ scale: 1 }}
       {...props}
     >
       <svg width="23" height="23" viewBox="0 0 23 23">
