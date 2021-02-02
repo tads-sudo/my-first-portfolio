@@ -25,7 +25,7 @@ export const ExperieceSections = () => {
     <>
       <Heading3Animation
         className={classes.heading3}
-        transition={{ delay: "1.8" }}
+        transition={{ delay: "0.9" }}
       >
         <Heading3>EXPERIENCE</Heading3>
       </Heading3Animation>
@@ -35,7 +35,7 @@ export const ExperieceSections = () => {
           <Card
             initial={{ x: -20, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
-            transition={{ delay: 2 }}
+            transition={{ delay: 1 }}
           >
             <div className={classes.cardContainer}>
               <div className={classes.logoAndTitle}>
@@ -146,7 +146,7 @@ export const ExperieceSections = () => {
           <Card
             initial={{ x: -20, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
-            transition={{ delay: 2.2 }}
+            transition={{ delay: 1.2 }}
           >
             <div className={classes.cardContainer}>
               <div className={classes.logoAndTitle}>

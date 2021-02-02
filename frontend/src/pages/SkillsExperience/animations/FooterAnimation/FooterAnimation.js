@@ -7,7 +7,7 @@ export const FooterAnimation = ({ children, className }) => {
       className={className}
       initial={{ x: -20, opacity: 0 }}
       animate={{ x: 0, opacity: 1 }}
-      transition={{ delay: 2.4 }}
+      transition={{ delay: 1.2 }}
     >
       {children}
     </motion.div>

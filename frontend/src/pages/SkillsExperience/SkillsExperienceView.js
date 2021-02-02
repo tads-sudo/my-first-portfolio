@@ -6,40 +6,21 @@ import {
   ExperienceSectionDesk,
   SkillsExperienceFooter,
 } from "./components";
-import { motion } from "framer-motion";
 import { TopButton } from "../../components";
+import { PageAnimation } from "./animations";
 
 export const SkillsExperienceView = () => {
   const classes = useStyles();
 
-  const pageAnimation = {
-    initial: {
-      opacity: 0,
-    },
-    in: {
-      opacity: 1,
-    },
-    out: {
-      opacity: 0,
-    },
-  };
-
   return (
-    <>
-      <motion.section
-        initial="initial"
-        animate="in"
-        exit="out"
-        variants={pageAnimation}
-      >
-        <div className={classes.container}>
-          <SkillsSection />
-          <ExperieceSections />
-          <ExperienceSectionDesk />
-          <SkillsExperienceFooter />
-        </div>
-      </motion.section>
+    <PageAnimation>
+      <div className={classes.container}>
+        <SkillsSection />
+        <ExperieceSections />
+        <ExperienceSectionDesk />
+        <SkillsExperienceFooter />
+      </div>
       <TopButton />
-    </>
+    </PageAnimation>
   );
 };
