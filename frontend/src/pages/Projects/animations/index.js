@@ -6,3 +6,4 @@ export * from "./FooterAnimation";
 export * from "./SocialAnimation";
 export * from "./ProjectCardsAnimation";
 export * from "./ProjectCardAnimation";
+export * from "./PageAnimation";
