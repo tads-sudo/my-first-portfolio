@@ -514,6 +514,20 @@ export const ReactRouter = ({ color }) => {
   );
 };
 
+export const Send = ({ color }) => {
+  return (
+    <>
+      <path
+        d="M15.8554 8.12111L10.1916 13.8227L3.56064 9.74147C2.69176 9.20657 2.86787 7.88697 3.8467 7.60287L19.5022 3.04743C20.3925 2.78978 21.2156 3.62446 20.949 4.51889L16.304 20.1582C16.013 21.1369 14.7082 21.3064 14.1809 20.4325L10.1916 13.8227"
+        stroke={color}
+        strokeWidth="1.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </>
+  );
+};
+
 export const Icon = {
   AdobeAfterEffect,
   AdobeIllustrator,
@@ -541,6 +555,7 @@ export const Icon = {
   Redux,
   ReactJs,
   ReactRouter,
+  Send,
 };
 
 AdobeAfterEffect.propTypes = {
@@ -748,5 +763,13 @@ ReactRouter.propTypes = {
 };
 
 ReactRouter.defaultProps = {
+  color: "#fff",
+};
+
+Send.propTypes = {
+  color: PropTypes.string,
+};
+
+Send.defaultProps = {
   color: "#fff",
 };
