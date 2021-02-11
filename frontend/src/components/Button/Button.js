@@ -9,14 +9,14 @@ export const Button = ({
   size = "LG",
   corner = "0",
   disabled = false,
-  type = "fill",
+  buttonType = "OUTLINE",
   ...props
 }) => {
   const classes = useStyles({
     colorProps: color,
     sizeProps: size,
     cornerProps: corner,
-    typeProps: type,
+    typeProps: buttonType,
   });
   return (
     <motion.button className={classes.button} disabled={disabled} {...props}>
