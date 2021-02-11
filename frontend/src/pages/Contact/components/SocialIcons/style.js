@@ -6,7 +6,7 @@ export const useStyles = createUseStyles({
     display: "flex",
     width: "75%",
     height: "24px",
-    alignSelf: "end",
+    alignSelf: "center",
     justifySelf: "center",
     flexDirection: "row",
     justifyContent: "space-between",

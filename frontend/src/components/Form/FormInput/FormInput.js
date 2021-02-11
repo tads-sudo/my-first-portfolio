@@ -1,13 +1,14 @@
 import React from "react";
 import { useStyles } from "./style";
+import { TextField } from "@material-ui/core";
 
-export const FormInput = ({ placeholder, type, isValid = null }) => {
-  const classes = useStyles({ isValid });
+export const FormInput = ({ ...props }) => {
+  const classes = useStyles();
   return (
-    <input
+    <TextField
       className={classes.formInput}
-      placeholder={placeholder}
-      type={type}
+      id="custom-css-full-width-input"
+      {...props}
     />
   );
 };

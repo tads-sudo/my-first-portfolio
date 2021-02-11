@@ -8,7 +8,7 @@ export const useStyles = createUseStyles({
     alignItems: "flex-start",
     padding: "0",
     width: "100%",
-    marginBottom: "30px",
+    marginBottom: "24px",
   },
   [`@media (min-width: ${SCREEN_TABLET.MIN}px)`]: {
     formGroup: {

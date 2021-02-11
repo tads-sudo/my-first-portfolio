@@ -15,12 +15,12 @@ export const useStyles = createUseStyles({
     flexDirection: "row",
     alignItems: "center",
     outline: "none",
-    ...button_types[props.typeProps],
+    ...button_types[props.buttonType],
     "&:disabled": {
-      backgroundColor: color.DISABLED,
-      borderColor: color.DISABLED,
-      cursor: "not-allowed",
-      ...button_types[props.typeProps],
+      backgroundColor: color.PRIMARY,
+      borderColor: color.PRIMARY,
+      cursor: "default",
+      ...button_types[props.buttonType],
     },
   }),
   link: (props) => ({

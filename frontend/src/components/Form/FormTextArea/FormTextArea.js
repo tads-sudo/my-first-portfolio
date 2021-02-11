@@ -1,13 +1,14 @@
 import React from "react";
 import { useStyles } from "./style";
+import { TextField } from "@material-ui/core";
 
-export const FormTextArea = ({ placeholder }) => {
+export const FormTextArea = ({ ...props }) => {
   const classes = useStyles();
   return (
-    <textarea
-      placeholder={placeholder}
+    <TextField
       className={classes.formTextArea}
-      rows="3"
+      id="custom-css-multiline-static"
+      {...props}
     />
   );
 };
