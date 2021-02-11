@@ -1,7 +1,11 @@
 import React from "react";
 import { useStyles } from "./style";
-import { ContactForm } from "./components";
-import { SocialIcons } from "./components";
+import {
+  ContactForm,
+  SocialIcons,
+  BackgroundTop,
+  BackgroundBot,
+} from "./components";
 import { PageAnimation } from "./animations";
 
 export const ContactView = () => {
@@ -9,6 +13,8 @@ export const ContactView = () => {
 
   return (
     <PageAnimation className={classes.container}>
+      <BackgroundTop />
+      <BackgroundBot />
       <div className={classes.contactForm}>
         <ContactForm />
       </div>
