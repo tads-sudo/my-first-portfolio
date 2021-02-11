@@ -1,10 +1,10 @@
 import React from "react";
 import { useStyles } from "./style";
 
-export const FormGroup = ({ children, style = {} }) => {
+export const FormGroup = ({ children, ...props }) => {
   const classes = useStyles();
   return (
-    <div style={style} className={classes.formGroup}>
+    <div className={classes.formGroup} {...props}>
       {children}
     </div>
   );
