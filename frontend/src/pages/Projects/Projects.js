@@ -29,7 +29,7 @@ export const Categories = ({ setFilterValue }) => {
             color="SECONDARY"
             key={`category-${index}`}
             whileHover={{
-              boxShadow: "0 0 0 2px rgba(255,113,41,1)",
+              scale: 1.05,
             }}
             whileFocus={{
               boxShadow: "0 0 0 2px rgba(255,113,41,1)",
@@ -80,15 +80,15 @@ export const Technologies = ({ project, projectIndex, setFilterValue }) => {
               filter(technology.id);
             }}
             key={`technologies-${projectIndex}-${index}`}
-            type="OUTLINE"
+            type="FILL"
             size="SM"
-            color="SUBTLE"
+            color="SECONDARY"
             corner={8}
             whileHover={{
-              boxShadow: "0 0 0 2px rgba(130,130,118,1)",
+              scale: 1.05,
             }}
             whileFocus={{
-              boxShadow: "0 0 0 2px rgba(130,130,118,1)",
+              boxShadow: "0 0 0 2px rgba(255,113,41,1)",
             }}
             whileTap={{ scale: 0.9 }}
           >
