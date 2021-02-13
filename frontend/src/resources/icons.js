@@ -110,6 +110,17 @@ export const ExternalLink = ({ color }) => {
   );
 };
 
+export const Facebook = ({ color }) => {
+  return (
+    <>
+      <path
+        d="M0 12.0722C0.0013962 18.0118 4.29393 23.0691 10.124 24V15.5616H7.07975V12.0722H10.1276V9.41596C9.99139 8.15731 10.4187 6.9029 11.2936 5.99294C12.1685 5.08298 13.4004 4.61179 14.6551 4.70715C15.5557 4.72179 16.4541 4.80249 17.343 4.94863V7.9176H15.8262C15.3041 7.84878 14.7791 8.0223 14.3992 8.38928C14.0193 8.75626 13.8256 9.27698 13.8727 9.80474V12.0722H17.1978L16.6662 15.5628H13.8727V24C20.1779 22.9974 24.5993 17.2033 23.9338 10.8154C23.2683 4.42748 17.7489 -0.31808 11.3742 0.0166677C4.99946 0.351415 0.00101334 5.64929 0 12.0722Z"
+        fill={color}
+      />
+    </>
+  );
+};
+
 export const Figma = ({ color }) => {
   return (
     <>
@@ -327,32 +338,6 @@ export const Linkedin = ({ color }) => {
   );
 };
 
-export const Messenger = ({ color }) => {
-  return (
-    <>
-      <g clipPath="url(#clip0)">
-        <path
-          fillRule="evenodd"
-          clipRule="evenodd"
-          d="M12 0C5.28599 0 0.0826416 4.91305 0.0826416 11.5485C0.0826416 15.0194 1.50694 18.0186 3.8257 20.0906C4.01996 20.2655 4.1374 20.5074 4.14699 20.7686L4.21176 22.8861C4.23334 23.5616 4.9311 24 5.54979 23.7293L7.91407 22.6873C8.11408 22.5988 8.33848 22.5819 8.5495 22.6394C9.63571 22.9388 10.7939 23.0969 12 23.0969C18.714 23.0969 23.9173 18.1839 23.9173 11.5485C23.9173 4.91305 18.714 0 12 0Z"
-          fill={color}
-        />
-        <path
-          fillRule="evenodd"
-          clipRule="evenodd"
-          d="M4.84482 14.9259L8.34566 9.37811C8.90196 8.49658 10.0961 8.27617 10.9305 8.90141L13.7144 10.9878C13.8388 11.0808 13.99 11.1308 14.1453 11.1304C14.3005 11.13 14.4514 11.0791 14.5753 10.9855L18.3351 8.13483C18.8363 7.75401 19.4933 8.3553 19.1552 8.88705L15.6567 14.4325C15.1004 15.314 13.9063 15.5344 13.0718 14.9092L10.288 12.8228C10.1636 12.7298 10.0124 12.6798 9.85713 12.6802C9.70187 12.6806 9.55095 12.7315 9.4271 12.8251L5.66485 15.6782C5.16373 16.059 4.50666 15.4577 4.84482 14.9259V14.9259Z"
-          fill="#2F2F2B"
-        />
-      </g>
-      <defs>
-        <clipPath id="clip0">
-          <rect width="24" height="24" fill="white" />
-        </clipPath>
-      </defs>
-    </>
-  );
-};
-
 export const Mongodb = ({ color }) => {
   return (
     <>
@@ -536,6 +521,7 @@ export const Icon = {
   Css,
   ExpressJs,
   ExternalLink,
+  Facebook,
   Figma,
   Framer,
   Github,
@@ -545,7 +531,6 @@ export const Icon = {
   Javascript,
   Jss,
   Linkedin,
-  Messenger,
   Mongodb,
   Mongoose,
   Node,
@@ -611,6 +596,14 @@ ExternalLink.propTypes = {
 };
 
 ExternalLink.defaultProps = {
+  color: "#fff",
+};
+
+Facebook.propTypes = {
+  color: PropTypes.string,
+};
+
+Facebook.defaultProps = {
   color: "#fff",
 };
 
@@ -683,14 +676,6 @@ Linkedin.propTypes = {
 };
 
 Linkedin.defaultProps = {
-  color: "#fff",
-};
-
-Messenger.propTypes = {
-  color: PropTypes.string,
-};
-
-Messenger.defaultProps = {
   color: "#fff",
 };
 
