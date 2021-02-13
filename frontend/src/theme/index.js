@@ -82,6 +82,6 @@ export const button_types = {
 };
 
 //SCREEN SIZES
-export const SCREEN_MOBILE = { MIN: 320, MAX: 480 };
-export const SCREEN_TABLET = { MIN: 481, MAX: 1024 };
+export const SCREEN_MOBILE = { MIN: 320, MAX: 540 };
+export const SCREEN_TABLET = { MIN: 541, MAX: 1024 };
 export const SCREEN_DESKTOP = { MIN: 1025, MAX: 0 };
