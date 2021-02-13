@@ -9,17 +9,17 @@ export const SocialIcons = () => {
 
   return (
     <SocialIconsAnimation className={classes.icons}>
-      <SocialIconAnimation href="...">
+      <SocialIconAnimation href="https://www.facebook.com/amado.viernes/">
         <div className={classes.iconTextRow}>
           <SocialIcon>
-            <Icon.Messenger color="#828276" />
+            <Icon.Facebook color="#828276" />
           </SocialIcon>
           <div className={classes.text}>
-            <SmallText>Messenger</SmallText>
+            <SmallText>Facebook</SmallText>
           </div>
         </div>
       </SocialIconAnimation>
-      <SocialIconAnimation href="...">
+      <SocialIconAnimation href="https://www.linkedin.com/in/amado-viernes-67450b190/">
         <div className={classes.iconTextRow}>
           <SocialIcon>
             <Icon.Linkedin color="#828276" />
@@ -29,7 +29,7 @@ export const SocialIcons = () => {
           </div>
         </div>
       </SocialIconAnimation>
-      <SocialIconAnimation href="...">
+      <SocialIconAnimation href="https://github.com/tads-sudo">
         <div className={classes.iconTextRow}>
           <SocialIcon>
             <Icon.Github color="#828276" />
@@ -39,7 +39,7 @@ export const SocialIcons = () => {
           </div>
         </div>
       </SocialIconAnimation>
-      <SocialIconAnimation href="...">
+      <SocialIconAnimation href="mailto:amadoviernes6@gmail.com">
         <div className={classes.iconTextRow}>
           <SocialIcon>
             <Icon.Gmail color="#828276" />
