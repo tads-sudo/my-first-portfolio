@@ -38,7 +38,7 @@ export const AboutView = () => {
             <div className={classes.headings}>
               <Heading1Animation>
                 <Heading1 style={{ marginBottom: "12px" }}>
-                  Hi, I'm <TextProperty color="PRIMARY">Mads</TextProperty>
+                  Hi, I'm <TextProperty color="PRIMARY">Amado</TextProperty>
                 </Heading1>
               </Heading1Animation>
               <Heading2Animation>
