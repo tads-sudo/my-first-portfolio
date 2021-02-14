@@ -4,28 +4,28 @@ import { AnimatePresence, motion } from "framer-motion";
 
 export const TopButton = () => {
   const classes = useStyles();
-  const [topButtonVisible, setTopButtonVisible] = useState(false);
+  const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    window.addEventListener("scroll", handleScroll, true);
-    return window.removeEventListener("scroll", handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, []);
 
   const handleScroll = () => {
     if (window.scrollY > 95) {
-      setTopButtonVisible(true);
+      setIsVisible(true);
     } else {
-      setTopButtonVisible(false);
+      setIsVisible(false);
     }
   };
 
   return (
     <AnimatePresence>
-      {topButtonVisible && (
+      {isVisible && (
         <motion.button
-          className={`${
-            topButtonVisible ? classes.button : classes.buttonNone
-          }`}
+          className={`${isVisible ? classes.button : classes.buttonNone}`}
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
           initial={{ scale: 0, y: -100 }}
           animate={{ scale: 1, y: 0 }}
