@@ -3,27 +3,37 @@ import { useStyles } from "./style";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
-export const Button = ({
-  children,
-  color = "PRIMARY",
-  size = "LG",
-  corner = "0",
-  disabled = false,
-  buttonType = "OUTLINE",
-  ...props
-}) => {
-  const classes = useStyles({
-    colorProps: color,
-    sizeProps: size,
-    cornerProps: corner,
-    typeProps: buttonType,
-  });
-  return (
-    <motion.button className={classes.button} disabled={disabled} {...props}>
-      {children}
-    </motion.button>
-  );
-};
+export const Button = React.forwardRef(
+  (
+    {
+      children,
+      color = "PRIMARY",
+      size = "LG",
+      corner = "0",
+      disabled = false,
+      buttonType = "OUTLINE",
+      ...props
+    },
+    ref
+  ) => {
+    const classes = useStyles({
+      colorProps: color,
+      sizeProps: size,
+      cornerProps: corner,
+      typeProps: buttonType,
+    });
+    return (
+      <motion.button
+        className={classes.button}
+        disabled={disabled}
+        ref={ref}
+        {...props}
+      >
+        {children}
+      </motion.button>
+    );
+  }
+);
 
 export const ButtonLink = ({
   children,
