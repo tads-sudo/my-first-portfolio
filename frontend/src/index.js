@@ -4,13 +4,22 @@ import { App } from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter as Router } from "react-router-dom";
 
-ReactDOM.render(
-  <React.StrictMode>
-    <Router>
-      <App />
-    </Router>
-  </React.StrictMode>,
-  document.getElementById("root")
+const loader = document.querySelector(".loader");
+
+const showLoader = () => loader.classList.remove("loader-hide");
+const hideLoader = () => loader.classList.add("loader-hide");
+
+setTimeout(
+  () =>
+    ReactDOM.render(
+      <React.StrictMode>
+        <Router>
+          <App hideLoader={hideLoader} showLoader={showLoader} />
+        </Router>
+      </React.StrictMode>,
+      document.getElementById("root")
+    ),
+  1000
 );
 
 // If you want to start measuring performance in your app, pass a function

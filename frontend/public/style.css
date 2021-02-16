@@ -1,3 +1,22 @@
+/* Preloader */
+.loader {
+  /* Cover all page */
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  /* Centering and putting background color */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loader-hide {
+  display: none;
+}
+
 /* width */
 ::-webkit-scrollbar {
   width: 3px;
