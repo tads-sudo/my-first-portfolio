@@ -9,6 +9,7 @@ import {
   SmallText,
   SocialIcon,
   BackgroundElement,
+  Meta,
 } from "../../components";
 import {
   SocialIconAnimation,
@@ -28,6 +29,7 @@ export const AboutView = () => {
 
   return (
     <>
+      <Meta />
       <PageAnimation>
         <BackgroundElement />
         <div className={classes.container}>
