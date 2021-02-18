@@ -32,6 +32,7 @@ export const AboutView = () => {
       <Meta />
       <PageAnimation>
         <BackgroundElement />
+        <h1>asd</h1>
         <div className={classes.container}>
           <CircleAnimation className={classes.circle}>
             <Circle />
