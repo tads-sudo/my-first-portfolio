@@ -37,6 +37,7 @@ export const AboutView = () => {
             <Circle />
           </CircleAnimation>
           <div className={classes.headingsBallChair}>
+            <h1>Test</h1>
             <div className={classes.headings}>
               <Heading1Animation>
                 <Heading1 style={{ marginBottom: "12px" }}>
