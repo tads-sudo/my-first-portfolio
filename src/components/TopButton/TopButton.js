@@ -26,6 +26,7 @@ export const TopButton = () => {
       {isVisible && (
         <motion.button
           className={`${isVisible ? classes.button : classes.buttonNone}`}
+          aria-label="Scroll to top button"
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
           initial={{ scale: 0, y: -100 }}
           animate={{ scale: 1, y: 0 }}
