@@ -32,6 +32,7 @@ export const useStyles = createUseStyles({
   [`@media(min-width:${SCREEN_DESKTOP.MIN}px)`]: {
     container: {
       padding: "30px 48px",
+      minHeight: "calc(100vh - 140px)",
       width: "calc(100% - 96px)",
       gridTemplateRows: "auto 48px",
       rowGap: "24px",
