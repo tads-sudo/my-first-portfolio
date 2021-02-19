@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-export const SocialIconAnimation = ({ children, href }) => {
+export const SocialIconAnimation = ({ children, href, ariaLabel }) => {
   const entryAnimation = {
     initial: {
       opacity: 0,
@@ -17,6 +17,7 @@ export const SocialIconAnimation = ({ children, href }) => {
   return (
     <motion.a
       href={href}
+      aria-label={ariaLabel}
       target="_blank"
       rel="noreferrer noopener"
       variants={entryAnimation}
