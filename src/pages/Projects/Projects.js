@@ -108,7 +108,8 @@ export const Images = ({ project, projectIndex }) => {
       {project.images.map((image, index) => {
         return (
           <Image
-            src={process.env.PUBLIC_URL + image}
+            src={process.env.PUBLIC_URL + image.src}
+            alt={image.alt}
             key={`images-${projectIndex}-${index}`}
             widthM="100%"
             heightM="100%"

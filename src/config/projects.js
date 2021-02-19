@@ -116,7 +116,16 @@ export const projects = [
         label: TECHNOLOGIES.MONGODB.label,
       },
     ],
-    images: ["/assets/images/proshop1.png", "/assets/images/proshop2.png"],
+    images: [
+      {
+        src: "/assets/images/proshop1.png",
+        alt: "proshop image 1",
+      },
+      {
+        src: "/assets/images/proshop2.png",
+        alt: "proshop image 2",
+      },
+    ],
   },
   {
     heading: "AMPC",
@@ -158,6 +167,11 @@ export const projects = [
         label: TECHNOLOGIES.REACTROUTER.label,
       },
     ],
-    images: ["/assets/images/apc.png"],
+    images: [
+      {
+        src: "/assets/images/apc.png",
+        alt: "Ampc image",
+      },
+    ],
   },
 ];
