@@ -33,6 +33,8 @@ export const useStyles = createUseStyles({
     container: {
       padding: "30px 48px",
       width: "calc(100% - 96px)",
+      gridTemplateRows: "auto 48px",
+      rowGap: "24px",
     },
   },
 });

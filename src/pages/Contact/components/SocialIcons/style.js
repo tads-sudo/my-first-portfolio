@@ -33,6 +33,7 @@ export const useStyles = createUseStyles({
     icons: {
       width: "38%",
       justifySelf: "center",
+      marginBottom: "24px",
     },
   },
 });
