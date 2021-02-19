@@ -29,6 +29,10 @@ import {
   Postman,
   Jss,
   Framer,
+  Git,
+  Mui,
+  Firebase,
+  Formik,
 } from "../../../../resources";
 import { Heading3Animation } from "../../animations";
 
@@ -74,6 +78,12 @@ export const SkillsSection = () => {
                 <Bootstrap />
               </SkillIcon>
               <Text style={{ textAlign: "center" }}>Boostrap 4</Text>
+            </div>
+            <div className={classes.skill}>
+              <SkillIcon size={25} viewBox="0 0 25 25">
+                <Mui />
+              </SkillIcon>
+              <Text style={{ textAlign: "center" }}>Material UI</Text>
             </div>
           </div>
         </Card>
@@ -136,6 +146,12 @@ export const SkillsSection = () => {
                 <Framer />
               </SkillIcon>
               <Text style={{ textAlign: "center" }}>Framer Motion</Text>
+            </div>
+            <div className={classes.skill}>
+              <SkillIcon size={25} viewBox="0 0 25 25">
+                <Formik />
+              </SkillIcon>
+              <Text style={{ textAlign: "center" }}>Formik and Yup</Text>
             </div>
           </div>
         </Card>
@@ -205,6 +221,12 @@ export const SkillsSection = () => {
               </SkillIcon>
               <Text style={{ textAlign: "center" }}>Mongoose</Text>
             </div>
+            <div className={classes.skill}>
+              <SkillIcon size={25} viewBox="0 0 25 25">
+                <Firebase />
+              </SkillIcon>
+              <Text style={{ textAlign: "center" }}>Firebase</Text>
+            </div>
           </div>
         </Card>
         {/* OTHERS */}
@@ -220,6 +242,12 @@ export const SkillsSection = () => {
                 <Github />
               </SkillIcon>
               <Text style={{ textAlign: "center" }}>Github</Text>
+            </div>
+            <div className={classes.skill}>
+              <SkillIcon size={25} viewBox="0 0 25 25">
+                <Git />
+              </SkillIcon>
+              <Text style={{ textAlign: "center" }}>Git</Text>
             </div>
             <div className={classes.skill}>
               <SkillIcon size={25} viewBox="0 0 25 25">
