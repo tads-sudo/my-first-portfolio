@@ -12,6 +12,8 @@ export const Navbar = ({ toggle, isOpen, handleCloseMenu }) => {
   return (
     <motion.nav
       className={classes.nav}
+      role="navigation"
+      aria-label="main navigation"
       initial={false}
       animate={isOpen ? "open" : "closed"}
     >
