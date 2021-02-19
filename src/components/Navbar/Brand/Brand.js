@@ -16,7 +16,7 @@ export const Brand = ({ handleCloseMenu }) => {
   };
 
   return (
-    <NavLink to="/about" onClick={handleCloseMenu}>
+    <NavLink to="/about" onClick={handleCloseMenu} aria-label="Website Logo">
       <motion.svg
         className={classes.svg}
         variants={brand}

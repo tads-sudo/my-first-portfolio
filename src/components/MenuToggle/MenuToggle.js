@@ -18,6 +18,8 @@ export const MenuToggle = ({ toggle, ...props }) => {
     <motion.button
       className={classes.button}
       onClick={toggle}
+      role="button"
+      aria-label="menu"
       initial={{ scale: 0 }}
       animate={{ scale: 1 }}
       {...props}
