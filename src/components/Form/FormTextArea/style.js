@@ -11,7 +11,7 @@ export const useStyles = createUseStyles({
       color: color.TERTIARY,
     },
     "& label": {
-      color: color.SUBTLE,
+      color: color.TERTIARY,
     },
     "& label.Mui-focused": {
       color: color.PRIMARY,
