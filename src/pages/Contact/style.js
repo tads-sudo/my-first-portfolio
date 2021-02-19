@@ -19,7 +19,7 @@ export const useStyles = createUseStyles({
       rowGap: "0",
       gridTemplateRows: "auto 24px",
       padding: "30px 50px",
-      height: "calc(100vh - 140px)",
+      minHeight: "calc(100vh - 140px)",
       width: "calc(100% - 100px)",
     },
     contactForm: {
