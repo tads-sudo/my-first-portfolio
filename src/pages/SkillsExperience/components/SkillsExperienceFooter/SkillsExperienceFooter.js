@@ -40,7 +40,10 @@ export const SkillsExperienceFooter = () => {
               <div className={classes.footerSocialMedia}>
                 <div className={classes.socialMediaRow1}>
                   <div className={classes.footerIconText}>
-                    <SocialIconAnimation href="mailto:amadoviernes6@gmail.com">
+                    <SocialIconAnimation
+                      href="mailto:amadoviernes6@gmail.com"
+                      ariaLabel="Gmail"
+                    >
                       <SocialIcon>
                         <Icon.Gmail color="#828276" />
                       </SocialIcon>
@@ -49,7 +52,10 @@ export const SkillsExperienceFooter = () => {
                   </div>
                 </div>
                 <div className={classes.footerIconText}>
-                  <SocialIconAnimation href="https://www.facebook.com/amado.viernes/">
+                  <SocialIconAnimation
+                    href="https://www.facebook.com/amado.viernes/"
+                    ariaLabel="Facebook"
+                  >
                     <SocialIcon>
                       <Icon.Facebook color="#828276" />
                     </SocialIcon>
