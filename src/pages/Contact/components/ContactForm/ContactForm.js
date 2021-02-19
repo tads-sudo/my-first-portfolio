@@ -110,6 +110,7 @@ export const ContactForm = () => {
           <FormGroup>
             <FormInput
               label="Full Name"
+              id="full-name"
               variant="outlined"
               fullWidth
               type="text"
@@ -125,6 +126,7 @@ export const ContactForm = () => {
           <FormGroup>
             <FormInput
               label="Company"
+              id="company"
               variant="outlined"
               fullWidth
               type="text"
@@ -141,6 +143,7 @@ export const ContactForm = () => {
         <FormGroup>
           <FormInput
             label="Email Address"
+            id="email-address"
             variant="outlined"
             fullWidth
             type="email"

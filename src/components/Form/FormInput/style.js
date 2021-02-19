@@ -10,7 +10,7 @@ export const useStyles = createUseStyles({
       caretColor: color.TERTIARY,
     },
     "& label": {
-      color: color.SUBTLE,
+      color: color.TERTIARY,
     },
     "& label.Mui-focused": {
       color: color.PRIMARY,
