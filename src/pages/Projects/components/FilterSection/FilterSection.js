@@ -39,6 +39,7 @@ export const FilterSection = ({ setFilterValue }) => {
             <Subtitle>Filter by category</Subtitle>
             <CollapseButton
               toggle={toggle}
+              aria-label="collapse-button"
               whileHover={{ scale: 1.05 }}
               whileFocus={{
                 boxShadow: "0 0 0 2px rgba(255,113,41,1)",
