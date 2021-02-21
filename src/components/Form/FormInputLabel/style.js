@@ -6,7 +6,6 @@ export const useStyles = createUseStyles({
     flexDirection: "row",
     alignItems: "flex-start",
     marginBottom: "8px",
-    // width: "100%",
     flex: "1",
   },
 });

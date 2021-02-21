@@ -7,7 +7,6 @@ export const useStyles = createUseStyles({
     rowGap: "24px",
     flexDirection: "column",
     padding: "20px",
-    // height: "calc(100% - 120px)",
   },
   contactForm: {
     width: "100%",

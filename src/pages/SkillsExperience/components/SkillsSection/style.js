@@ -38,7 +38,6 @@ export const useStyles = createUseStyles({
     },
   },
   [`@media(min-width:${SCREEN_DESKTOP.MIN}px)`]: {
-    // SKILLS SECTION
     skillsContainer: {
       display: "grid",
       gridTemplateColumns: "repeat(2, 1fr)",

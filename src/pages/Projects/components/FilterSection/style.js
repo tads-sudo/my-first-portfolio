@@ -2,11 +2,9 @@ import { createUseStyles } from "react-jss";
 import { SCREEN_TABLET, SCREEN_DESKTOP } from "../../../../theme";
 
 export const useStyles = createUseStyles({
-  // HEADING 3
   heading3: {
     marginBottom: "20px",
   },
-  //   FILTER SECTION
   filterCard: {
     marginLeft: "6px",
     marginBottom: "25px",
@@ -27,18 +25,15 @@ export const useStyles = createUseStyles({
   },
 
   [`@media(min-width:${SCREEN_TABLET.MIN}px)`]: {
-    // HEADING 3
     heading3: {
       marginBottom: "30px",
     },
-    //   FILTER SECTION
     filterCard: {
       marginLeft: "20px",
       marginBottom: "30px",
     },
   },
   [`@media(min-width:${SCREEN_DESKTOP.MIN}px)`]: {
-    //   FILTER SECTION
     filterCard: {
       marginLeft: "0",
     },

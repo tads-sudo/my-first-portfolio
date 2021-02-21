@@ -15,10 +15,6 @@ export const useStyles = createUseStyles({
     transition: "0.2s ease-in-out",
     color: color.TERTIARY,
     cursor: "pointer",
-    // "&:hover": {
-    //   color: color.PRIMARY,
-    //   transition: "0.2s ease-in-out",
-    // },
   },
   activeNavLink: {
     color: color.PRIMARY,
