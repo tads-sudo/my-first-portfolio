@@ -1,4 +1,3 @@
-// COLORS
 export const WHITE = "#ffffff";
 export const BLACK = "#000000";
 export const SNOW_DRIFT = "#f9faf7";
@@ -25,7 +24,6 @@ export const color = {
   NONE: NONE,
 };
 
-// FONT WEIGHT
 export const font_weight = {
   THIN: "100",
   EXTRA_LIGHT: "200",
@@ -38,7 +36,6 @@ export const font_weight = {
   BLACK: "900",
 };
 
-// BUTTON
 export const button_sizes = {
   SM: {
     padding: "8px 24px",
@@ -81,7 +78,6 @@ export const button_types = {
   },
 };
 
-//SCREEN SIZES
 export const SCREEN_MOBILE = { MIN: 320, MAX: 540 };
 export const SCREEN_TABLET = { MIN: 541, MAX: 1024 };
 export const SCREEN_DESKTOP = { MIN: 1025, MAX: 0 };
