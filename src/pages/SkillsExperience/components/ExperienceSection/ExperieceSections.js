@@ -135,7 +135,7 @@ export const ExperieceSections = () => {
               <div className={classes.dateInCard}>
                 <SmallText>
                   <TextProperty color="TERTIARY">
-                    Jan. 2020 - June 2020
+                    January 2020 - June 2020
                   </TextProperty>
                 </SmallText>
               </div>
@@ -214,7 +214,7 @@ export const ExperieceSections = () => {
               <div className={classes.dateInCard}>
                 <SmallText>
                   <TextProperty color="TERTIARY">
-                    Sept. 2019 - Dec. 2019
+                    September 2019 - December 2019
                   </TextProperty>
                 </SmallText>
               </div>

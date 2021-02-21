@@ -5,7 +5,7 @@ export const useStyles = createUseStyles({
   heading: {
     color: SNOW_DRIFT,
     fontFamily: "Montserrat, sans-serif",
-    fontSize: "1.625em",
+    fontSize: "1.25em",
     fontWeight: "500",
     letterSpacing: "-0.0325em",
     lineHeight: "125%",

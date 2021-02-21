@@ -50,7 +50,7 @@ export const AboutView = () => {
                 </Heading2>
               </Heading2Animation>
               <TextAnimation>
-                <Text bold style={{ marginBottom: "24px" }}>
+                <Text style={{ marginBottom: "24px" }}>
                   Current Focus:{" "}
                   <TextProperty color="PRIMARY" weight="NORMAL">
                     React-Jss, Framer-Motion, Design System, and Figma

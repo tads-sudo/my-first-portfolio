@@ -47,7 +47,7 @@ export const ProjectSection = ({ filterValue, setFilterValue }) => {
                     <Text style={{ marginBottom: "24px" }}>
                       {project.subheading}
                     </Text>
-                    <Text bold style={{ marginBottom: "10px" }}>
+                    <Text style={{ marginBottom: "10px" }}>
                       {project.description}
                     </Text>
                     <div className={classes.items}>
