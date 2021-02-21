@@ -58,7 +58,7 @@ export const Functionalities = ({ project, classes, projectIndex }) => {
             <SocialIcon>
               <Icon.Bullet />
             </SocialIcon>
-            <Text bold>{functionality}</Text>
+            <Text>{functionality}</Text>
           </div>
         );
       })}
