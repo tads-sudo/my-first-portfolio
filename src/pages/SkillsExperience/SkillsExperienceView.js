@@ -28,3 +28,5 @@ export const SkillsExperienceView = () => {
     </>
   );
 };
+
+export default SkillsExperienceView;
