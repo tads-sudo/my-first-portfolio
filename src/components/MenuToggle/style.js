@@ -1,5 +1,5 @@
 import { createUseStyles } from "react-jss";
-import { SCREEN_TABLET, SCREEN_DESKTOP } from "../../theme";
+import { SCREEN_DESKTOP } from "../../theme";
 
 export const useStyles = createUseStyles({
   button: {
@@ -14,9 +14,6 @@ export const useStyles = createUseStyles({
     height: "60px",
     padding: "0",
     background: "transparent",
-  },
-  [`@media (min-width:${SCREEN_TABLET.MIN}px)`]: {
-    button: {},
   },
   [`@media (min-width:${SCREEN_DESKTOP.MIN}px)`]: {
     button: {
