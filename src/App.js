@@ -1,11 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Topbar, Navbar, ScrollToTop } from "./components";
 import { Routes } from "./routes";
 
-export const App = ({ hideLoader }) => {
+export const App = () => {
   const [isOpen, setIsOpen] = useState(false);
-
-  useEffect(hideLoader, []);
 
   const toggle = () => {
     setIsOpen((currentState) => {
