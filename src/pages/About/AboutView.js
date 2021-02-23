@@ -110,3 +110,5 @@ export const AboutView = () => {
     </>
   );
 };
+
+export default AboutView;

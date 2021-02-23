@@ -27,3 +27,5 @@ export const ProjectsView = () => {
     </>
   );
 };
+
+export default ProjectsView;

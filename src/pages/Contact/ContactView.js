@@ -27,3 +27,5 @@ export const ContactView = () => {
     </>
   );
 };
+
+export default ContactView;
