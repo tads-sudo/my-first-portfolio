@@ -17,3 +17,4 @@ export * from "./Load";
 export * from "./Scroll";
 export * from "./TopButton";
 export * from "./Meta";
+export * from "./Preloader";
