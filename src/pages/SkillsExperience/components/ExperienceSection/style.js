@@ -16,9 +16,6 @@ export const useStyles = createUseStyles({
     display: "flex",
     marginBottom: "20px",
   },
-  companyTabDeskLogo: {
-    display: "none",
-  },
   cardTitle: {
     display: "flex",
     flexDirection: "column",
@@ -80,11 +77,6 @@ export const useStyles = createUseStyles({
     },
     companyMobLogo: {
       display: "none",
-    },
-    companyTabDeskLogo: {
-      display: "flex",
-      width: "fit-content",
-      marginRight: "15px",
     },
     cardTitle: {
       display: "grid",
