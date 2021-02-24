@@ -13,6 +13,7 @@ export const Image = ({
   heightD,
   ...props
 }) => {
+  const [isLoading, setLoadingState] = useState(true);
   const classes = useStyles({
     widthM,
     heightM,
@@ -20,14 +21,13 @@ export const Image = ({
     heightT,
     widthD,
     heightD,
+    isLoading,
   });
-
-  const [isLoading, setLoadingState] = useState(true);
 
   return (
     <>
-      <div style={{ display: isLoading ? "block" : "none" }}>
-        <Load />
+      <div className={classes.loader}>
+        <Load color="#ff7129" />
       </div>
       <img
         className={classes.image}

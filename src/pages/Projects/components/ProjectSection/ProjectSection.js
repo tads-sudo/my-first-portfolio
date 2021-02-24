@@ -88,9 +88,7 @@ export const ProjectSection = ({ filterValue, setFilterValue }) => {
                     </div>
                   </div>
                   <div className={classes.rightSection}>
-                    <div className={classes.images}>
-                      <Images project={project} projectIndex={projectIndex} />
-                    </div>
+                    <Images project={project} projectIndex={projectIndex} />
                   </div>
                 </div>
               </Card>

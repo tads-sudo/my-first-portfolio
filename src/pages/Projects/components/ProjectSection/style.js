@@ -35,11 +35,8 @@ export const useStyles = createUseStyles({
   rightSection: {
     display: "flex",
     flexDirection: "column",
-  },
-  images: {
-    display: "flex",
-    flexDirection: "column",
-    rowGap: "24px",
+    justifyContent: "space-around",
+    alignItems: "center",
   },
   [`@media(min-width:${SCREEN_TABLET.MIN}px)`]: {
     projectsCard: {
