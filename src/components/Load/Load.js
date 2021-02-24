@@ -1,26 +1,8 @@
 import React from "react";
-import Lottie from "react-lottie";
-import animationData from "../../lotties/loading.json";
+import CircularProgress from "@material-ui/core/CircularProgress";
 
-export const Load = () => {
-  const defaultOptions = {
-    loop: true,
-    autoplay: true,
-    animationData: animationData,
-    rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice",
-    },
-  };
-
+export const Load = ({ color }) => {
   return (
-    <Lottie
-      options={defaultOptions}
-      style={{
-        margin: "none",
-        objectFit: "contain",
-        height: "auto",
-        width: "auto",
-      }}
-    />
+    <CircularProgress style={{ color: color, width: "50%", height: "50%" }} />
   );
 };
