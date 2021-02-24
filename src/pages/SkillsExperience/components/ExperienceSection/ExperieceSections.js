@@ -10,13 +10,7 @@ import {
   SmallText,
   TextProperty,
 } from "../../../../components";
-import {
-  ThousandmindsMob,
-  ThousandmindsTabDesk,
-  CtiMob,
-  CtiTabDesk,
-  Icon,
-} from "../../../../resources";
+import { ThousandmindsMob, CtiMob, Icon } from "../../../../resources";
 import { Heading3Animation } from "../../animations";
 
 export const ExperieceSections = () => {
@@ -30,7 +24,6 @@ export const ExperieceSections = () => {
         <Heading3>EXPERIENCE</Heading3>
       </Heading3Animation>
       <div className={classes.experienceContainer}>
-        {/* DISPLAY NONE TO DESKTOP */}
         <div className={classes.thousandmindsMobTab}>
           <Card
             initial={{ x: -20, opacity: 0 }}
@@ -42,11 +35,6 @@ export const ExperieceSections = () => {
                 <div className={classes.companyMobLogo}>
                   <CompanyLogo viewBox="0 0 314 115" width={220} height={80}>
                     <ThousandmindsMob />
-                  </CompanyLogo>
-                </div>
-                <div className={classes.companyTabDeskLogo}>
-                  <CompanyLogo viewBox="0 0 200 115" width={200} height={115}>
-                    <ThousandmindsTabDesk />
                   </CompanyLogo>
                 </div>
                 <div className={classes.cardTitle}>
@@ -153,11 +141,6 @@ export const ExperieceSections = () => {
                 <div className={classes.companyMobLogo}>
                   <CompanyLogo viewBox="0 0 314 115" width={220} height={80}>
                     <CtiMob />
-                  </CompanyLogo>
-                </div>
-                <div className={classes.companyTabDeskLogo}>
-                  <CompanyLogo viewBox="0 0 200 115" width={200} height={115}>
-                    <CtiTabDesk />
                   </CompanyLogo>
                 </div>
                 <div className={classes.cardTitle}>

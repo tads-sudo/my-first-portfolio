@@ -37,6 +37,7 @@ export const useStyles = createUseStyles({
     flexDirection: "column",
     justifyContent: "space-around",
     alignItems: "center",
+    rowGap: "24px",
   },
   [`@media(min-width:${SCREEN_TABLET.MIN}px)`]: {
     projectsCard: {
