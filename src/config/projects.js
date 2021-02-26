@@ -57,7 +57,7 @@ export const projects = [
     description:
       "This is my output from a jump in and get your hands dirty course by Brad Traversy. Proshopav is a customized eCommerce / shopping cart web application with MERN stack with the following functionality:",
     functionalities: [
-      "Full featured shopping cart",
+      "Full-featured shopping cart",
       "Product reviews and ratings",
       "Top products carousel",
       "Product pagination",
@@ -134,8 +134,8 @@ export const projects = [
       "APC is a personal website owned by an international territorial specialist of Phirst Park Homes Incorporated. This website:",
     functionalities: [
       "Helps the owner to promote the entire range of the company products and services while ensuring the customers needs and expectations are met by the company.",
-      "Will allow all current and potential home buyers to get in touch and get the  information at anytime and anywhere.",
-      "Is responsive web application.",
+      "Will allow all current and potential home buyers to get in touch and get the information at any time and anywhere.",
+      "Is a responsive web application.",
     ],
     link: {
       label: "VISIT SITE",
