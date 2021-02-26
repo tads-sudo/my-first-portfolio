@@ -12,18 +12,10 @@ const Path = (props) => (
   />
 );
 
-export const MenuToggle = ({ toggle, ...props }) => {
+export const MenuToggle = ({ toggle }) => {
   const classes = useStyles();
   return (
-    <motion.button
-      className={classes.button}
-      onClick={toggle}
-      role="button"
-      aria-label="menu"
-      initial={{ scale: 0 }}
-      animate={{ scale: 1 }}
-      {...props}
-    >
+    <button className={classes.button} onClick={toggle} aria-label="menu">
       <svg width="23" height="23" viewBox="0 0 23 23">
         <Path
           variants={{
@@ -46,6 +38,6 @@ export const MenuToggle = ({ toggle, ...props }) => {
           }}
         />
       </svg>
-    </motion.button>
+    </button>
   );
 };
