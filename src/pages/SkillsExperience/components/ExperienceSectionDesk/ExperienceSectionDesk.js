@@ -62,8 +62,8 @@ export const ExperienceSectionDesk = () => {
                       <Icon.Bullet />
                     </SocialIcon>
                     <Text>
-                      Developed and implemented functional requirement based on
-                      client requirement using react and react native.
+                      Developed and implemented functional requirements based on
+                      client requirements using react and react-native.
                     </Text>
                   </div>
                   <div className={classes.itemm}>
@@ -82,7 +82,7 @@ export const ExperienceSectionDesk = () => {
                     <SocialIcon>
                       <Icon.Bullet />
                     </SocialIcon>
-                    <Text>Used gitlab as versioning control.</Text>
+                    <Text>Used GitLab as versioning control.</Text>
                   </div>
                   <div className={classes.itemm}>
                     <SocialIcon>
@@ -137,7 +137,7 @@ export const ExperienceSectionDesk = () => {
                         <Icon.Bullet />
                       </SocialIcon>
                       <Text>
-                        Inspect all the deliverable units are in acceptable
+                        Inspect that all the deliverable units are of acceptable
                         quality and if complete and correct.
                       </Text>
                     </div>
@@ -146,8 +146,8 @@ export const ExperienceSectionDesk = () => {
                         <Icon.Bullet />
                       </SocialIcon>
                       <Text>
-                        Testing of units if within the specification for final
-                        product.
+                        Testing of units is within the specification for the
+                        final product.
                       </Text>
                     </div>
                     <div className={classes.itemm}>

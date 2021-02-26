@@ -45,7 +45,7 @@ export const AboutView = () => {
               </Heading1Animation>
               <Heading2Animation>
                 <Heading2 style={{ marginBottom: "12px" }}>
-                  I‘m junior web developer, specializing in front-end
+                  I‘m a junior web developer, specializing in front-end
                   development.
                 </Heading2>
               </Heading2Animation>
