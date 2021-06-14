@@ -66,15 +66,6 @@ export const ExperieceSections = () => {
                       <Icon.Bullet />
                     </SocialIcon>
                     <Text>
-                      Started learning about React, React-native, Redux, and
-                      Axios.
-                    </Text>
-                  </div>
-                  <div className={classes.item}>
-                    <SocialIcon>
-                      <Icon.Bullet />
-                    </SocialIcon>
-                    <Text>
                       Acquired novice level experience in React and
                       React-native.
                     </Text>
